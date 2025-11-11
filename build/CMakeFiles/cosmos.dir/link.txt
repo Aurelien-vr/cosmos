@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -fsanitize=address -fno-omit-frame-pointer -Wl,--dependency-file=CMakeFiles/cosmos.dir/link.d CMakeFiles/cosmos.dir/home/aurel/Dev/ComputationalPhysics/cosmos/src/main.cpp.o -o cosmos  /usr/local/lib/libglfw3.a /usr/lib/librt.a -lm -ldl /usr/lib/libGLX.so /usr/lib/libOpenGL.so
