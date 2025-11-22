@@ -1,4 +1,4 @@
-# Install script for directory: /home/aurel/Dev/ComputationalPhysics/cosmos/cmake
+# Install script for directory: /home/aurel/Dev/ComputationalPhysics/cosmos
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

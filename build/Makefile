@@ -57,7 +57,7 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/aurel/Dev/ComputationalPhysics/cosmos/cmake
+CMAKE_SOURCE_DIR = /home/aurel/Dev/ComputationalPhysics/cosmos
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/aurel/Dev/ComputationalPhysics/cosmos/build
@@ -129,29 +129,197 @@ cosmos/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cosmos.dir/build.make CMakeFiles/cosmos.dir/build
 .PHONY : cosmos/fast
 
-home/aurel/Dev/ComputationalPhysics/cosmos/src/main.o: home/aurel/Dev/ComputationalPhysics/cosmos/src/main.cpp.o
-.PHONY : home/aurel/Dev/ComputationalPhysics/cosmos/src/main.o
+src/EBO.o: src/EBO.cpp.o
+.PHONY : src/EBO.o
 
 # target to build an object file
-home/aurel/Dev/ComputationalPhysics/cosmos/src/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cosmos.dir/build.make CMakeFiles/cosmos.dir/home/aurel/Dev/ComputationalPhysics/cosmos/src/main.cpp.o
-.PHONY : home/aurel/Dev/ComputationalPhysics/cosmos/src/main.cpp.o
+src/EBO.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cosmos.dir/build.make CMakeFiles/cosmos.dir/src/EBO.cpp.o
+.PHONY : src/EBO.cpp.o
 
-home/aurel/Dev/ComputationalPhysics/cosmos/src/main.i: home/aurel/Dev/ComputationalPhysics/cosmos/src/main.cpp.i
-.PHONY : home/aurel/Dev/ComputationalPhysics/cosmos/src/main.i
+src/EBO.i: src/EBO.cpp.i
+.PHONY : src/EBO.i
 
 # target to preprocess a source file
-home/aurel/Dev/ComputationalPhysics/cosmos/src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cosmos.dir/build.make CMakeFiles/cosmos.dir/home/aurel/Dev/ComputationalPhysics/cosmos/src/main.cpp.i
-.PHONY : home/aurel/Dev/ComputationalPhysics/cosmos/src/main.cpp.i
+src/EBO.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cosmos.dir/build.make CMakeFiles/cosmos.dir/src/EBO.cpp.i
+.PHONY : src/EBO.cpp.i
 
-home/aurel/Dev/ComputationalPhysics/cosmos/src/main.s: home/aurel/Dev/ComputationalPhysics/cosmos/src/main.cpp.s
-.PHONY : home/aurel/Dev/ComputationalPhysics/cosmos/src/main.s
+src/EBO.s: src/EBO.cpp.s
+.PHONY : src/EBO.s
 
 # target to generate assembly for a file
-home/aurel/Dev/ComputationalPhysics/cosmos/src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cosmos.dir/build.make CMakeFiles/cosmos.dir/home/aurel/Dev/ComputationalPhysics/cosmos/src/main.cpp.s
-.PHONY : home/aurel/Dev/ComputationalPhysics/cosmos/src/main.cpp.s
+src/EBO.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cosmos.dir/build.make CMakeFiles/cosmos.dir/src/EBO.cpp.s
+.PHONY : src/EBO.cpp.s
+
+src/Shader.o: src/Shader.cpp.o
+.PHONY : src/Shader.o
+
+# target to build an object file
+src/Shader.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cosmos.dir/build.make CMakeFiles/cosmos.dir/src/Shader.cpp.o
+.PHONY : src/Shader.cpp.o
+
+src/Shader.i: src/Shader.cpp.i
+.PHONY : src/Shader.i
+
+# target to preprocess a source file
+src/Shader.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cosmos.dir/build.make CMakeFiles/cosmos.dir/src/Shader.cpp.i
+.PHONY : src/Shader.cpp.i
+
+src/Shader.s: src/Shader.cpp.s
+.PHONY : src/Shader.s
+
+# target to generate assembly for a file
+src/Shader.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cosmos.dir/build.make CMakeFiles/cosmos.dir/src/Shader.cpp.s
+.PHONY : src/Shader.cpp.s
+
+src/VAO.o: src/VAO.cpp.o
+.PHONY : src/VAO.o
+
+# target to build an object file
+src/VAO.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cosmos.dir/build.make CMakeFiles/cosmos.dir/src/VAO.cpp.o
+.PHONY : src/VAO.cpp.o
+
+src/VAO.i: src/VAO.cpp.i
+.PHONY : src/VAO.i
+
+# target to preprocess a source file
+src/VAO.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cosmos.dir/build.make CMakeFiles/cosmos.dir/src/VAO.cpp.i
+.PHONY : src/VAO.cpp.i
+
+src/VAO.s: src/VAO.cpp.s
+.PHONY : src/VAO.s
+
+# target to generate assembly for a file
+src/VAO.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cosmos.dir/build.make CMakeFiles/cosmos.dir/src/VAO.cpp.s
+.PHONY : src/VAO.cpp.s
+
+src/VBO.o: src/VBO.cpp.o
+.PHONY : src/VBO.o
+
+# target to build an object file
+src/VBO.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cosmos.dir/build.make CMakeFiles/cosmos.dir/src/VBO.cpp.o
+.PHONY : src/VBO.cpp.o
+
+src/VBO.i: src/VBO.cpp.i
+.PHONY : src/VBO.i
+
+# target to preprocess a source file
+src/VBO.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cosmos.dir/build.make CMakeFiles/cosmos.dir/src/VBO.cpp.i
+.PHONY : src/VBO.cpp.i
+
+src/VBO.s: src/VBO.cpp.s
+.PHONY : src/VBO.s
+
+# target to generate assembly for a file
+src/VBO.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cosmos.dir/build.make CMakeFiles/cosmos.dir/src/VBO.cpp.s
+.PHONY : src/VBO.cpp.s
+
+src/auCharacter.o: src/auCharacter.cpp.o
+.PHONY : src/auCharacter.o
+
+# target to build an object file
+src/auCharacter.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cosmos.dir/build.make CMakeFiles/cosmos.dir/src/auCharacter.cpp.o
+.PHONY : src/auCharacter.cpp.o
+
+src/auCharacter.i: src/auCharacter.cpp.i
+.PHONY : src/auCharacter.i
+
+# target to preprocess a source file
+src/auCharacter.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cosmos.dir/build.make CMakeFiles/cosmos.dir/src/auCharacter.cpp.i
+.PHONY : src/auCharacter.cpp.i
+
+src/auCharacter.s: src/auCharacter.cpp.s
+.PHONY : src/auCharacter.s
+
+# target to generate assembly for a file
+src/auCharacter.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cosmos.dir/build.make CMakeFiles/cosmos.dir/src/auCharacter.cpp.s
+.PHONY : src/auCharacter.cpp.s
+
+src/auFontRendering.o: src/auFontRendering.cpp.o
+.PHONY : src/auFontRendering.o
+
+# target to build an object file
+src/auFontRendering.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cosmos.dir/build.make CMakeFiles/cosmos.dir/src/auFontRendering.cpp.o
+.PHONY : src/auFontRendering.cpp.o
+
+src/auFontRendering.i: src/auFontRendering.cpp.i
+.PHONY : src/auFontRendering.i
+
+# target to preprocess a source file
+src/auFontRendering.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cosmos.dir/build.make CMakeFiles/cosmos.dir/src/auFontRendering.cpp.i
+.PHONY : src/auFontRendering.cpp.i
+
+src/auFontRendering.s: src/auFontRendering.cpp.s
+.PHONY : src/auFontRendering.s
+
+# target to generate assembly for a file
+src/auFontRendering.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cosmos.dir/build.make CMakeFiles/cosmos.dir/src/auFontRendering.cpp.s
+.PHONY : src/auFontRendering.cpp.s
+
+src/glad.o: src/glad.c.o
+.PHONY : src/glad.o
+
+# target to build an object file
+src/glad.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cosmos.dir/build.make CMakeFiles/cosmos.dir/src/glad.c.o
+.PHONY : src/glad.c.o
+
+src/glad.i: src/glad.c.i
+.PHONY : src/glad.i
+
+# target to preprocess a source file
+src/glad.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cosmos.dir/build.make CMakeFiles/cosmos.dir/src/glad.c.i
+.PHONY : src/glad.c.i
+
+src/glad.s: src/glad.c.s
+.PHONY : src/glad.s
+
+# target to generate assembly for a file
+src/glad.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cosmos.dir/build.make CMakeFiles/cosmos.dir/src/glad.c.s
+.PHONY : src/glad.c.s
+
+src/main.o: src/main.cpp.o
+.PHONY : src/main.o
+
+# target to build an object file
+src/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cosmos.dir/build.make CMakeFiles/cosmos.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
+
+src/main.i: src/main.cpp.i
+.PHONY : src/main.i
+
+# target to preprocess a source file
+src/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cosmos.dir/build.make CMakeFiles/cosmos.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
+
+src/main.s: src/main.cpp.s
+.PHONY : src/main.s
+
+# target to generate assembly for a file
+src/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cosmos.dir/build.make CMakeFiles/cosmos.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
 
 # Help Target
 help:
@@ -162,9 +330,30 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... cosmos"
-	@echo "... home/aurel/Dev/ComputationalPhysics/cosmos/src/main.o"
-	@echo "... home/aurel/Dev/ComputationalPhysics/cosmos/src/main.i"
-	@echo "... home/aurel/Dev/ComputationalPhysics/cosmos/src/main.s"
+	@echo "... src/EBO.o"
+	@echo "... src/EBO.i"
+	@echo "... src/EBO.s"
+	@echo "... src/Shader.o"
+	@echo "... src/Shader.i"
+	@echo "... src/Shader.s"
+	@echo "... src/VAO.o"
+	@echo "... src/VAO.i"
+	@echo "... src/VAO.s"
+	@echo "... src/VBO.o"
+	@echo "... src/VBO.i"
+	@echo "... src/VBO.s"
+	@echo "... src/auCharacter.o"
+	@echo "... src/auCharacter.i"
+	@echo "... src/auCharacter.s"
+	@echo "... src/auFontRendering.o"
+	@echo "... src/auFontRendering.i"
+	@echo "... src/auFontRendering.s"
+	@echo "... src/glad.o"
+	@echo "... src/glad.i"
+	@echo "... src/glad.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
 .PHONY : help
 
 

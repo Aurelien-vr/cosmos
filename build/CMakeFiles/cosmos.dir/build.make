@@ -53,7 +53,7 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/aurel/Dev/ComputationalPhysics/cosmos/cmake
+CMAKE_SOURCE_DIR = /home/aurel/Dev/ComputationalPhysics/cosmos
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/aurel/Dev/ComputationalPhysics/cosmos/build
@@ -72,37 +72,150 @@ include CMakeFiles/cosmos.dir/flags.make
 CMakeFiles/cosmos.dir/codegen:
 .PHONY : CMakeFiles/cosmos.dir/codegen
 
-CMakeFiles/cosmos.dir/home/aurel/Dev/ComputationalPhysics/cosmos/src/main.cpp.o: CMakeFiles/cosmos.dir/flags.make
-CMakeFiles/cosmos.dir/home/aurel/Dev/ComputationalPhysics/cosmos/src/main.cpp.o: /home/aurel/Dev/ComputationalPhysics/cosmos/src/main.cpp
-CMakeFiles/cosmos.dir/home/aurel/Dev/ComputationalPhysics/cosmos/src/main.cpp.o: CMakeFiles/cosmos.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/aurel/Dev/ComputationalPhysics/cosmos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/cosmos.dir/home/aurel/Dev/ComputationalPhysics/cosmos/src/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cosmos.dir/home/aurel/Dev/ComputationalPhysics/cosmos/src/main.cpp.o -MF CMakeFiles/cosmos.dir/home/aurel/Dev/ComputationalPhysics/cosmos/src/main.cpp.o.d -o CMakeFiles/cosmos.dir/home/aurel/Dev/ComputationalPhysics/cosmos/src/main.cpp.o -c /home/aurel/Dev/ComputationalPhysics/cosmos/src/main.cpp
+CMakeFiles/cosmos.dir/src/main.cpp.o: CMakeFiles/cosmos.dir/flags.make
+CMakeFiles/cosmos.dir/src/main.cpp.o: /home/aurel/Dev/ComputationalPhysics/cosmos/src/main.cpp
+CMakeFiles/cosmos.dir/src/main.cpp.o: CMakeFiles/cosmos.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/aurel/Dev/ComputationalPhysics/cosmos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/cosmos.dir/src/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cosmos.dir/src/main.cpp.o -MF CMakeFiles/cosmos.dir/src/main.cpp.o.d -o CMakeFiles/cosmos.dir/src/main.cpp.o -c /home/aurel/Dev/ComputationalPhysics/cosmos/src/main.cpp
 
-CMakeFiles/cosmos.dir/home/aurel/Dev/ComputationalPhysics/cosmos/src/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/cosmos.dir/home/aurel/Dev/ComputationalPhysics/cosmos/src/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/aurel/Dev/ComputationalPhysics/cosmos/src/main.cpp > CMakeFiles/cosmos.dir/home/aurel/Dev/ComputationalPhysics/cosmos/src/main.cpp.i
+CMakeFiles/cosmos.dir/src/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/cosmos.dir/src/main.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/aurel/Dev/ComputationalPhysics/cosmos/src/main.cpp > CMakeFiles/cosmos.dir/src/main.cpp.i
 
-CMakeFiles/cosmos.dir/home/aurel/Dev/ComputationalPhysics/cosmos/src/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cosmos.dir/home/aurel/Dev/ComputationalPhysics/cosmos/src/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/aurel/Dev/ComputationalPhysics/cosmos/src/main.cpp -o CMakeFiles/cosmos.dir/home/aurel/Dev/ComputationalPhysics/cosmos/src/main.cpp.s
+CMakeFiles/cosmos.dir/src/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cosmos.dir/src/main.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/aurel/Dev/ComputationalPhysics/cosmos/src/main.cpp -o CMakeFiles/cosmos.dir/src/main.cpp.s
+
+CMakeFiles/cosmos.dir/src/glad.c.o: CMakeFiles/cosmos.dir/flags.make
+CMakeFiles/cosmos.dir/src/glad.c.o: /home/aurel/Dev/ComputationalPhysics/cosmos/src/glad.c
+CMakeFiles/cosmos.dir/src/glad.c.o: CMakeFiles/cosmos.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/aurel/Dev/ComputationalPhysics/cosmos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/cosmos.dir/src/glad.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/cosmos.dir/src/glad.c.o -MF CMakeFiles/cosmos.dir/src/glad.c.o.d -o CMakeFiles/cosmos.dir/src/glad.c.o -c /home/aurel/Dev/ComputationalPhysics/cosmos/src/glad.c
+
+CMakeFiles/cosmos.dir/src/glad.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/cosmos.dir/src/glad.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/aurel/Dev/ComputationalPhysics/cosmos/src/glad.c > CMakeFiles/cosmos.dir/src/glad.c.i
+
+CMakeFiles/cosmos.dir/src/glad.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/cosmos.dir/src/glad.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/aurel/Dev/ComputationalPhysics/cosmos/src/glad.c -o CMakeFiles/cosmos.dir/src/glad.c.s
+
+CMakeFiles/cosmos.dir/src/auFontRendering.cpp.o: CMakeFiles/cosmos.dir/flags.make
+CMakeFiles/cosmos.dir/src/auFontRendering.cpp.o: /home/aurel/Dev/ComputationalPhysics/cosmos/src/auFontRendering.cpp
+CMakeFiles/cosmos.dir/src/auFontRendering.cpp.o: CMakeFiles/cosmos.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/aurel/Dev/ComputationalPhysics/cosmos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/cosmos.dir/src/auFontRendering.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cosmos.dir/src/auFontRendering.cpp.o -MF CMakeFiles/cosmos.dir/src/auFontRendering.cpp.o.d -o CMakeFiles/cosmos.dir/src/auFontRendering.cpp.o -c /home/aurel/Dev/ComputationalPhysics/cosmos/src/auFontRendering.cpp
+
+CMakeFiles/cosmos.dir/src/auFontRendering.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/cosmos.dir/src/auFontRendering.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/aurel/Dev/ComputationalPhysics/cosmos/src/auFontRendering.cpp > CMakeFiles/cosmos.dir/src/auFontRendering.cpp.i
+
+CMakeFiles/cosmos.dir/src/auFontRendering.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cosmos.dir/src/auFontRendering.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/aurel/Dev/ComputationalPhysics/cosmos/src/auFontRendering.cpp -o CMakeFiles/cosmos.dir/src/auFontRendering.cpp.s
+
+CMakeFiles/cosmos.dir/src/auCharacter.cpp.o: CMakeFiles/cosmos.dir/flags.make
+CMakeFiles/cosmos.dir/src/auCharacter.cpp.o: /home/aurel/Dev/ComputationalPhysics/cosmos/src/auCharacter.cpp
+CMakeFiles/cosmos.dir/src/auCharacter.cpp.o: CMakeFiles/cosmos.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/aurel/Dev/ComputationalPhysics/cosmos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/cosmos.dir/src/auCharacter.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cosmos.dir/src/auCharacter.cpp.o -MF CMakeFiles/cosmos.dir/src/auCharacter.cpp.o.d -o CMakeFiles/cosmos.dir/src/auCharacter.cpp.o -c /home/aurel/Dev/ComputationalPhysics/cosmos/src/auCharacter.cpp
+
+CMakeFiles/cosmos.dir/src/auCharacter.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/cosmos.dir/src/auCharacter.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/aurel/Dev/ComputationalPhysics/cosmos/src/auCharacter.cpp > CMakeFiles/cosmos.dir/src/auCharacter.cpp.i
+
+CMakeFiles/cosmos.dir/src/auCharacter.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cosmos.dir/src/auCharacter.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/aurel/Dev/ComputationalPhysics/cosmos/src/auCharacter.cpp -o CMakeFiles/cosmos.dir/src/auCharacter.cpp.s
+
+CMakeFiles/cosmos.dir/src/Shader.cpp.o: CMakeFiles/cosmos.dir/flags.make
+CMakeFiles/cosmos.dir/src/Shader.cpp.o: /home/aurel/Dev/ComputationalPhysics/cosmos/src/Shader.cpp
+CMakeFiles/cosmos.dir/src/Shader.cpp.o: CMakeFiles/cosmos.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/aurel/Dev/ComputationalPhysics/cosmos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/cosmos.dir/src/Shader.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cosmos.dir/src/Shader.cpp.o -MF CMakeFiles/cosmos.dir/src/Shader.cpp.o.d -o CMakeFiles/cosmos.dir/src/Shader.cpp.o -c /home/aurel/Dev/ComputationalPhysics/cosmos/src/Shader.cpp
+
+CMakeFiles/cosmos.dir/src/Shader.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/cosmos.dir/src/Shader.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/aurel/Dev/ComputationalPhysics/cosmos/src/Shader.cpp > CMakeFiles/cosmos.dir/src/Shader.cpp.i
+
+CMakeFiles/cosmos.dir/src/Shader.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cosmos.dir/src/Shader.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/aurel/Dev/ComputationalPhysics/cosmos/src/Shader.cpp -o CMakeFiles/cosmos.dir/src/Shader.cpp.s
+
+CMakeFiles/cosmos.dir/src/VBO.cpp.o: CMakeFiles/cosmos.dir/flags.make
+CMakeFiles/cosmos.dir/src/VBO.cpp.o: /home/aurel/Dev/ComputationalPhysics/cosmos/src/VBO.cpp
+CMakeFiles/cosmos.dir/src/VBO.cpp.o: CMakeFiles/cosmos.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/aurel/Dev/ComputationalPhysics/cosmos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/cosmos.dir/src/VBO.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cosmos.dir/src/VBO.cpp.o -MF CMakeFiles/cosmos.dir/src/VBO.cpp.o.d -o CMakeFiles/cosmos.dir/src/VBO.cpp.o -c /home/aurel/Dev/ComputationalPhysics/cosmos/src/VBO.cpp
+
+CMakeFiles/cosmos.dir/src/VBO.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/cosmos.dir/src/VBO.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/aurel/Dev/ComputationalPhysics/cosmos/src/VBO.cpp > CMakeFiles/cosmos.dir/src/VBO.cpp.i
+
+CMakeFiles/cosmos.dir/src/VBO.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cosmos.dir/src/VBO.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/aurel/Dev/ComputationalPhysics/cosmos/src/VBO.cpp -o CMakeFiles/cosmos.dir/src/VBO.cpp.s
+
+CMakeFiles/cosmos.dir/src/VAO.cpp.o: CMakeFiles/cosmos.dir/flags.make
+CMakeFiles/cosmos.dir/src/VAO.cpp.o: /home/aurel/Dev/ComputationalPhysics/cosmos/src/VAO.cpp
+CMakeFiles/cosmos.dir/src/VAO.cpp.o: CMakeFiles/cosmos.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/aurel/Dev/ComputationalPhysics/cosmos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/cosmos.dir/src/VAO.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cosmos.dir/src/VAO.cpp.o -MF CMakeFiles/cosmos.dir/src/VAO.cpp.o.d -o CMakeFiles/cosmos.dir/src/VAO.cpp.o -c /home/aurel/Dev/ComputationalPhysics/cosmos/src/VAO.cpp
+
+CMakeFiles/cosmos.dir/src/VAO.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/cosmos.dir/src/VAO.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/aurel/Dev/ComputationalPhysics/cosmos/src/VAO.cpp > CMakeFiles/cosmos.dir/src/VAO.cpp.i
+
+CMakeFiles/cosmos.dir/src/VAO.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cosmos.dir/src/VAO.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/aurel/Dev/ComputationalPhysics/cosmos/src/VAO.cpp -o CMakeFiles/cosmos.dir/src/VAO.cpp.s
+
+CMakeFiles/cosmos.dir/src/EBO.cpp.o: CMakeFiles/cosmos.dir/flags.make
+CMakeFiles/cosmos.dir/src/EBO.cpp.o: /home/aurel/Dev/ComputationalPhysics/cosmos/src/EBO.cpp
+CMakeFiles/cosmos.dir/src/EBO.cpp.o: CMakeFiles/cosmos.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/aurel/Dev/ComputationalPhysics/cosmos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/cosmos.dir/src/EBO.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cosmos.dir/src/EBO.cpp.o -MF CMakeFiles/cosmos.dir/src/EBO.cpp.o.d -o CMakeFiles/cosmos.dir/src/EBO.cpp.o -c /home/aurel/Dev/ComputationalPhysics/cosmos/src/EBO.cpp
+
+CMakeFiles/cosmos.dir/src/EBO.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/cosmos.dir/src/EBO.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/aurel/Dev/ComputationalPhysics/cosmos/src/EBO.cpp > CMakeFiles/cosmos.dir/src/EBO.cpp.i
+
+CMakeFiles/cosmos.dir/src/EBO.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cosmos.dir/src/EBO.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/aurel/Dev/ComputationalPhysics/cosmos/src/EBO.cpp -o CMakeFiles/cosmos.dir/src/EBO.cpp.s
 
 # Object files for target cosmos
 cosmos_OBJECTS = \
-"CMakeFiles/cosmos.dir/home/aurel/Dev/ComputationalPhysics/cosmos/src/main.cpp.o"
+"CMakeFiles/cosmos.dir/src/main.cpp.o" \
+"CMakeFiles/cosmos.dir/src/glad.c.o" \
+"CMakeFiles/cosmos.dir/src/auFontRendering.cpp.o" \
+"CMakeFiles/cosmos.dir/src/auCharacter.cpp.o" \
+"CMakeFiles/cosmos.dir/src/Shader.cpp.o" \
+"CMakeFiles/cosmos.dir/src/VBO.cpp.o" \
+"CMakeFiles/cosmos.dir/src/VAO.cpp.o" \
+"CMakeFiles/cosmos.dir/src/EBO.cpp.o"
 
 # External object files for target cosmos
 cosmos_EXTERNAL_OBJECTS =
 
-cosmos: CMakeFiles/cosmos.dir/home/aurel/Dev/ComputationalPhysics/cosmos/src/main.cpp.o
+cosmos: CMakeFiles/cosmos.dir/src/main.cpp.o
+cosmos: CMakeFiles/cosmos.dir/src/glad.c.o
+cosmos: CMakeFiles/cosmos.dir/src/auFontRendering.cpp.o
+cosmos: CMakeFiles/cosmos.dir/src/auCharacter.cpp.o
+cosmos: CMakeFiles/cosmos.dir/src/Shader.cpp.o
+cosmos: CMakeFiles/cosmos.dir/src/VBO.cpp.o
+cosmos: CMakeFiles/cosmos.dir/src/VAO.cpp.o
+cosmos: CMakeFiles/cosmos.dir/src/EBO.cpp.o
 cosmos: CMakeFiles/cosmos.dir/build.make
 cosmos: CMakeFiles/cosmos.dir/compiler_depend.ts
 cosmos: /usr/local/lib/libglfw3.a
+cosmos: /usr/lib/libfreetype.so
 cosmos: /usr/lib/librt.a
 cosmos: /usr/lib/libm.so
 cosmos: /usr/lib/libGLX.so
 cosmos: /usr/lib/libOpenGL.so
 cosmos: CMakeFiles/cosmos.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/aurel/Dev/ComputationalPhysics/cosmos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable cosmos"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/aurel/Dev/ComputationalPhysics/cosmos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable cosmos"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/cosmos.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -114,6 +227,6 @@ CMakeFiles/cosmos.dir/clean:
 .PHONY : CMakeFiles/cosmos.dir/clean
 
 CMakeFiles/cosmos.dir/depend:
-	cd /home/aurel/Dev/ComputationalPhysics/cosmos/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/aurel/Dev/ComputationalPhysics/cosmos/cmake /home/aurel/Dev/ComputationalPhysics/cosmos/cmake /home/aurel/Dev/ComputationalPhysics/cosmos/build /home/aurel/Dev/ComputationalPhysics/cosmos/build /home/aurel/Dev/ComputationalPhysics/cosmos/build/CMakeFiles/cosmos.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/aurel/Dev/ComputationalPhysics/cosmos/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/aurel/Dev/ComputationalPhysics/cosmos /home/aurel/Dev/ComputationalPhysics/cosmos /home/aurel/Dev/ComputationalPhysics/cosmos/build /home/aurel/Dev/ComputationalPhysics/cosmos/build /home/aurel/Dev/ComputationalPhysics/cosmos/build/CMakeFiles/cosmos.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/cosmos.dir/depend
 

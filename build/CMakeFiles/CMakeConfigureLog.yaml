@@ -39,6 +39,8 @@ events:
       ENV{PATH}:
         - "/home/aurel/.local/bin"
         - "/home/aurel/.local/bin"
+        - "/home/aurel/.local/bin"
+        - "/home/aurel/.local/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
@@ -102,6 +104,8 @@ events:
       ENV{PATH}:
         - "/home/aurel/.local/bin"
         - "/home/aurel/.local/bin"
+        - "/home/aurel/.local/bin"
+        - "/home/aurel/.local/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
@@ -157,6 +161,8 @@ events:
       ENV{PATH}:
         - "/home/aurel/.local/bin"
         - "/home/aurel/.local/bin"
+        - "/home/aurel/.local/bin"
+        - "/home/aurel/.local/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
@@ -192,6 +198,8 @@ events:
     found: "/usr/share/cmake/Modules/CMakeCXXCompilerId.cpp.in"
     search_context:
       ENV{PATH}:
+        - "/home/aurel/.local/bin"
+        - "/home/aurel/.local/bin"
         - "/home/aurel/.local/bin"
         - "/home/aurel/.local/bin"
         - "/usr/local/sbin"
@@ -258,6 +266,8 @@ events:
       ENV{PATH}:
         - "/home/aurel/.local/bin"
         - "/home/aurel/.local/bin"
+        - "/home/aurel/.local/bin"
+        - "/home/aurel/.local/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
@@ -298,6 +308,8 @@ events:
     found: "/usr/bin/ranlib"
     search_context:
       ENV{PATH}:
+        - "/home/aurel/.local/bin"
+        - "/home/aurel/.local/bin"
         - "/home/aurel/.local/bin"
         - "/home/aurel/.local/bin"
         - "/usr/local/sbin"
@@ -342,6 +354,8 @@ events:
       ENV{PATH}:
         - "/home/aurel/.local/bin"
         - "/home/aurel/.local/bin"
+        - "/home/aurel/.local/bin"
+        - "/home/aurel/.local/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
@@ -382,6 +396,8 @@ events:
     found: "/usr/bin/ld"
     search_context:
       ENV{PATH}:
+        - "/home/aurel/.local/bin"
+        - "/home/aurel/.local/bin"
         - "/home/aurel/.local/bin"
         - "/home/aurel/.local/bin"
         - "/usr/local/sbin"
@@ -426,6 +442,8 @@ events:
       ENV{PATH}:
         - "/home/aurel/.local/bin"
         - "/home/aurel/.local/bin"
+        - "/home/aurel/.local/bin"
+        - "/home/aurel/.local/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
@@ -466,6 +484,8 @@ events:
     found: "/usr/bin/objdump"
     search_context:
       ENV{PATH}:
+        - "/home/aurel/.local/bin"
+        - "/home/aurel/.local/bin"
         - "/home/aurel/.local/bin"
         - "/home/aurel/.local/bin"
         - "/usr/local/sbin"
@@ -510,6 +530,8 @@ events:
       ENV{PATH}:
         - "/home/aurel/.local/bin"
         - "/home/aurel/.local/bin"
+        - "/home/aurel/.local/bin"
+        - "/home/aurel/.local/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
@@ -550,6 +572,8 @@ events:
     found: "/usr/bin/readelf"
     search_context:
       ENV{PATH}:
+        - "/home/aurel/.local/bin"
+        - "/home/aurel/.local/bin"
         - "/home/aurel/.local/bin"
         - "/home/aurel/.local/bin"
         - "/usr/local/sbin"
@@ -604,6 +628,8 @@ events:
       ENV{PATH}:
         - "/home/aurel/.local/bin"
         - "/home/aurel/.local/bin"
+        - "/home/aurel/.local/bin"
+        - "/home/aurel/.local/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
@@ -644,6 +670,8 @@ events:
     found: "/usr/bin/addr2line"
     search_context:
       ENV{PATH}:
+        - "/home/aurel/.local/bin"
+        - "/home/aurel/.local/bin"
         - "/home/aurel/.local/bin"
         - "/home/aurel/.local/bin"
         - "/usr/local/sbin"
@@ -696,6 +724,8 @@ events:
     found: false
     search_context:
       ENV{PATH}:
+        - "/home/aurel/.local/bin"
+        - "/home/aurel/.local/bin"
         - "/home/aurel/.local/bin"
         - "/home/aurel/.local/bin"
         - "/usr/local/sbin"
@@ -771,6 +801,8 @@ events:
       ENV{PATH}:
         - "/home/aurel/.local/bin"
         - "/home/aurel/.local/bin"
+        - "/home/aurel/.local/bin"
+        - "/home/aurel/.local/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
@@ -844,6 +876,8 @@ events:
       ENV{PATH}:
         - "/home/aurel/.local/bin"
         - "/home/aurel/.local/bin"
+        - "/home/aurel/.local/bin"
+        - "/home/aurel/.local/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
@@ -861,8 +895,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "/home/aurel/Dev/ComputationalPhysics/cosmos/build/CMakeFiles/CMakeScratch/TryCompile-111SUf"
-      binary: "/home/aurel/Dev/ComputationalPhysics/cosmos/build/CMakeFiles/CMakeScratch/TryCompile-111SUf"
+      source: "/home/aurel/Dev/ComputationalPhysics/cosmos/build/CMakeFiles/CMakeScratch/TryCompile-ISI4b4"
+      binary: "/home/aurel/Dev/ComputationalPhysics/cosmos/build/CMakeFiles/CMakeScratch/TryCompile-ISI4b4"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -872,13 +906,13 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/home/aurel/Dev/ComputationalPhysics/cosmos/build/CMakeFiles/CMakeScratch/TryCompile-111SUf'
+        Change Dir: '/home/aurel/Dev/ComputationalPhysics/cosmos/build/CMakeFiles/CMakeScratch/TryCompile-ISI4b4'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_2ee19/fast
-        /usr/bin/make  -f CMakeFiles/cmTC_2ee19.dir/build.make CMakeFiles/cmTC_2ee19.dir/build
-        make[1]: Entering directory '/home/aurel/Dev/ComputationalPhysics/cosmos/build/CMakeFiles/CMakeScratch/TryCompile-111SUf'
-        Building CXX object CMakeFiles/cmTC_2ee19.dir/CMakeCXXCompilerABI.cpp.o
-        /usr/bin/c++   -v -o CMakeFiles/cmTC_2ee19.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_46c16/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_46c16.dir/build.make CMakeFiles/cmTC_46c16.dir/build
+        make[1]: Entering directory '/home/aurel/Dev/ComputationalPhysics/cosmos/build/CMakeFiles/CMakeScratch/TryCompile-ISI4b4'
+        Building CXX object CMakeFiles/cmTC_46c16.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/c++   -v -o CMakeFiles/cmTC_46c16.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
         Using built-in specs.
         COLLECT_GCC=/usr/bin/c++
         Target: x86_64-pc-linux-gnu
@@ -886,8 +920,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
         gcc version 15.2.1 20250813 (GCC) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_2ee19.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_2ee19.dir/'
-         /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/cc1plus -quiet -v -D_GNU_SOURCE /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_2ee19.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/ccT6bK7j.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_46c16.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_46c16.dir/'
+         /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/cc1plus -quiet -v -D_GNU_SOURCE /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_46c16.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/ccK2y8eE.s
         GNU C++17 (GCC) version 15.2.1 20250813 (x86_64-pc-linux-gnu)
         	compiled by GNU C version 15.2.1 20250813, GMP version 6.3.0, MPFR version 4.2.2, MPC version 1.3.1, isl version isl-0.27-GMP
         
@@ -904,14 +938,14 @@ events:
          /usr/include
         End of search list.
         Compiler executable checksum: 452a313327dacf71986995db29f6855a
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_2ee19.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_2ee19.dir/'
-         as -v --64 -o CMakeFiles/cmTC_2ee19.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccT6bK7j.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_46c16.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_46c16.dir/'
+         as -v --64 -o CMakeFiles/cmTC_46c16.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccK2y8eE.s
         GNU assembler version 2.45.0 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.45.0
         COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_2ee19.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_2ee19.dir/CMakeCXXCompilerABI.cpp.'
-        Linking CXX executable cmTC_2ee19
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2ee19.dir/link.txt --verbose=1
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_46c16.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_46c16.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_46c16
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_46c16.dir/link.txt --verbose=1
         Using built-in specs.
         COLLECT_GCC=/usr/bin/c++
         COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper
@@ -922,14 +956,14 @@ events:
         gcc version 15.2.1 20250813 (GCC) 
         COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_2ee19' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_2ee19.'
-         /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccfxxo5U.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_2ee19 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_2ee19.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_46c16' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_46c16.'
+         /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccIRBrXN.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_46c16 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_46c16.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o
         collect2 version 15.2.1 20250813
-        /usr/bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccfxxo5U.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_2ee19 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_2ee19.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o
+        /usr/bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccIRBrXN.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_46c16 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_46c16.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o
         GNU ld (GNU Binutils) 2.45.0
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_2ee19' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_2ee19.'
-        /usr/bin/c++  -v -Wl,-v CMakeFiles/cmTC_2ee19.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_2ee19
-        make[1]: Leaving directory '/home/aurel/Dev/ComputationalPhysics/cosmos/build/CMakeFiles/CMakeScratch/TryCompile-111SUf'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_46c16' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_46c16.'
+        /usr/bin/c++  -v -Wl,-v CMakeFiles/cmTC_46c16.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_46c16
+        make[1]: Leaving directory '/home/aurel/Dev/ComputationalPhysics/cosmos/build/CMakeFiles/CMakeScratch/TryCompile-ISI4b4'
         
       exitCode: 0
   -
@@ -970,13 +1004,13 @@ events:
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: '/home/aurel/Dev/ComputationalPhysics/cosmos/build/CMakeFiles/CMakeScratch/TryCompile-111SUf']
+        ignore line: [Change Dir: '/home/aurel/Dev/ComputationalPhysics/cosmos/build/CMakeFiles/CMakeScratch/TryCompile-ISI4b4']
         ignore line: []
-        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_2ee19/fast]
-        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_2ee19.dir/build.make CMakeFiles/cmTC_2ee19.dir/build]
-        ignore line: [make[1]: Entering directory '/home/aurel/Dev/ComputationalPhysics/cosmos/build/CMakeFiles/CMakeScratch/TryCompile-111SUf']
-        ignore line: [Building CXX object CMakeFiles/cmTC_2ee19.dir/CMakeCXXCompilerABI.cpp.o]
-        ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_2ee19.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_46c16/fast]
+        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_46c16.dir/build.make CMakeFiles/cmTC_46c16.dir/build]
+        ignore line: [make[1]: Entering directory '/home/aurel/Dev/ComputationalPhysics/cosmos/build/CMakeFiles/CMakeScratch/TryCompile-ISI4b4']
+        ignore line: [Building CXX object CMakeFiles/cmTC_46c16.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_46c16.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/c++]
         ignore line: [Target: x86_64-pc-linux-gnu]
@@ -984,8 +1018,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 15.2.1 20250813 (GCC) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_2ee19.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_2ee19.dir/']
-        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/cc1plus -quiet -v -D_GNU_SOURCE /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_2ee19.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/ccT6bK7j.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_46c16.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_46c16.dir/']
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/cc1plus -quiet -v -D_GNU_SOURCE /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_46c16.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/ccK2y8eE.s]
         ignore line: [GNU C++17 (GCC) version 15.2.1 20250813 (x86_64-pc-linux-gnu)]
         ignore line: [	compiled by GNU C version 15.2.1 20250813  GMP version 6.3.0  MPFR version 4.2.2  MPC version 1.3.1  isl version isl-0.27-GMP]
         ignore line: []
@@ -1002,14 +1036,14 @@ events:
         ignore line: [ /usr/include]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: 452a313327dacf71986995db29f6855a]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_2ee19.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_2ee19.dir/']
-        ignore line: [ as -v --64 -o CMakeFiles/cmTC_2ee19.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccT6bK7j.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_46c16.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_46c16.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_46c16.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccK2y8eE.s]
         ignore line: [GNU assembler version 2.45.0 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.45.0]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_2ee19.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_2ee19.dir/CMakeCXXCompilerABI.cpp.']
-        ignore line: [Linking CXX executable cmTC_2ee19]
-        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2ee19.dir/link.txt --verbose=1]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_46c16.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_46c16.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_46c16]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_46c16.dir/link.txt --verbose=1]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/c++]
         ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper]
@@ -1020,13 +1054,13 @@ events:
         ignore line: [gcc version 15.2.1 20250813 (GCC) ]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_2ee19' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_2ee19.']
-        link line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccfxxo5U.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_2ee19 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_2ee19.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_46c16' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_46c16.']
+        link line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccIRBrXN.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_46c16 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_46c16.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o]
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/collect2] ==> ignore
           arg [-plugin] ==> ignore
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so] ==> ignore
           arg [-plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/tmp/ccfxxo5U.res] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccIRBrXN.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -1041,7 +1075,7 @@ events:
           arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
           arg [-pie] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_2ee19] ==> ignore
+          arg [cmTC_46c16] ==> ignore
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o]
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o]
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o]
@@ -1053,7 +1087,7 @@ events:
           arg [-L/lib] ==> dir [/lib]
           arg [-L/usr/lib] ==> dir [/usr/lib]
           arg [-v] ==> ignore
-          arg [CMakeFiles/cmTC_2ee19.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [CMakeFiles/cmTC_46c16.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
           arg [-lstdc++] ==> lib [stdc++]
           arg [-lm] ==> lib [m]
           arg [-lgcc_s] ==> lib [gcc_s]
@@ -1064,7 +1098,7 @@ events:
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o]
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o]
         ignore line: [collect2 version 15.2.1 20250813]
-        ignore line: [/usr/bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccfxxo5U.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_2ee19 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_2ee19.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o]
+        ignore line: [/usr/bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccIRBrXN.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_46c16 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_46c16.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o]
         linker tool for 'CXX': /usr/bin/ld
         collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o] ==> [/usr/lib/Scrt1.o]
         collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o] ==> [/usr/lib/crti.o]
@@ -1101,12 +1135,12 @@ events:
       - "/usr/share/cmake/Modules/FindThreads.cmake:163 (_threads_check_libc)"
       - "/usr/share/cmake/Modules/CMakeFindDependencyMacro.cmake:78 (find_package)"
       - "/usr/local/lib/cmake/glfw3/glfw3Config.cmake:2 (find_dependency)"
-      - "CMakeLists.txt:29 (find_package)"
+      - "CMakeLists.txt:33 (find_package)"
     checks:
       - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
     directories:
-      source: "/home/aurel/Dev/ComputationalPhysics/cosmos/build/CMakeFiles/CMakeScratch/TryCompile-ony2kN"
-      binary: "/home/aurel/Dev/ComputationalPhysics/cosmos/build/CMakeFiles/CMakeScratch/TryCompile-ony2kN"
+      source: "/home/aurel/Dev/ComputationalPhysics/cosmos/build/CMakeFiles/CMakeScratch/TryCompile-S49EIF"
+      binary: "/home/aurel/Dev/ComputationalPhysics/cosmos/build/CMakeFiles/CMakeScratch/TryCompile-S49EIF"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -1115,23 +1149,23 @@ events:
       variable: "CMAKE_HAVE_LIBC_PTHREAD"
       cached: true
       stdout: |
-        Change Dir: '/home/aurel/Dev/ComputationalPhysics/cosmos/build/CMakeFiles/CMakeScratch/TryCompile-ony2kN'
+        Change Dir: '/home/aurel/Dev/ComputationalPhysics/cosmos/build/CMakeFiles/CMakeScratch/TryCompile-S49EIF'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_6444b/fast
-        /usr/bin/make  -f CMakeFiles/cmTC_6444b.dir/build.make CMakeFiles/cmTC_6444b.dir/build
-        make[1]: Entering directory '/home/aurel/Dev/ComputationalPhysics/cosmos/build/CMakeFiles/CMakeScratch/TryCompile-ony2kN'
-        Building CXX object CMakeFiles/cmTC_6444b.dir/src.cxx.o
-        /usr/bin/c++ -DCMAKE_HAVE_LIBC_PTHREAD  -std=c++17 -o CMakeFiles/cmTC_6444b.dir/src.cxx.o -c /home/aurel/Dev/ComputationalPhysics/cosmos/build/CMakeFiles/CMakeScratch/TryCompile-ony2kN/src.cxx
-        Linking CXX executable cmTC_6444b
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6444b.dir/link.txt --verbose=1
-        /usr/bin/c++ CMakeFiles/cmTC_6444b.dir/src.cxx.o -o cmTC_6444b
-        make[1]: Leaving directory '/home/aurel/Dev/ComputationalPhysics/cosmos/build/CMakeFiles/CMakeScratch/TryCompile-ony2kN'
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_9955b/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_9955b.dir/build.make CMakeFiles/cmTC_9955b.dir/build
+        make[1]: Entering directory '/home/aurel/Dev/ComputationalPhysics/cosmos/build/CMakeFiles/CMakeScratch/TryCompile-S49EIF'
+        Building CXX object CMakeFiles/cmTC_9955b.dir/src.cxx.o
+        /usr/bin/c++ -DCMAKE_HAVE_LIBC_PTHREAD  -std=c++17 -o CMakeFiles/cmTC_9955b.dir/src.cxx.o -c /home/aurel/Dev/ComputationalPhysics/cosmos/build/CMakeFiles/CMakeScratch/TryCompile-S49EIF/src.cxx
+        Linking CXX executable cmTC_9955b
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9955b.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_9955b.dir/src.cxx.o -o cmTC_9955b
+        make[1]: Leaving directory '/home/aurel/Dev/ComputationalPhysics/cosmos/build/CMakeFiles/CMakeScratch/TryCompile-S49EIF'
         
       exitCode: 0
   -
     kind: "find_package-v1"
     backtrace:
-      - "CMakeLists.txt:29 (find_package)"
+      - "CMakeLists.txt:33 (find_package)"
     name: "glfw3"
     configs:
       -
@@ -1197,6 +1231,8 @@ events:
       ENV{PATH}:
         - "/home/aurel/.local/bin"
         - "/home/aurel/.local/bin"
+        - "/home/aurel/.local/bin"
+        - "/home/aurel/.local/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
@@ -1219,7 +1255,7 @@ events:
     kind: "find-v1"
     backtrace:
       - "/usr/share/cmake/Modules/FindOpenGL.cmake:289 (find_path)"
-      - "CMakeLists.txt:30 (find_package)"
+      - "CMakeLists.txt:34 (find_package)"
     mode: "path"
     variable: "OPENGL_INCLUDE_DIR"
     description: "Path to a file."
@@ -1275,6 +1311,8 @@ events:
       ENV{PATH}:
         - "/home/aurel/.local/bin"
         - "/home/aurel/.local/bin"
+        - "/home/aurel/.local/bin"
+        - "/home/aurel/.local/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
@@ -1299,7 +1337,7 @@ events:
     kind: "find-v1"
     backtrace:
       - "/usr/share/cmake/Modules/FindOpenGL.cmake:295 (find_path)"
-      - "CMakeLists.txt:30 (find_package)"
+      - "CMakeLists.txt:34 (find_package)"
     mode: "path"
     variable: "OPENGL_GLX_INCLUDE_DIR"
     description: "Path to a file."
@@ -1352,6 +1390,8 @@ events:
       ENV{PATH}:
         - "/home/aurel/.local/bin"
         - "/home/aurel/.local/bin"
+        - "/home/aurel/.local/bin"
+        - "/home/aurel/.local/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
@@ -1376,7 +1416,7 @@ events:
     kind: "find-v1"
     backtrace:
       - "/usr/share/cmake/Modules/FindOpenGL.cmake:296 (find_path)"
-      - "CMakeLists.txt:30 (find_package)"
+      - "CMakeLists.txt:34 (find_package)"
     mode: "path"
     variable: "OPENGL_EGL_INCLUDE_DIR"
     description: "Path to a file."
@@ -1429,6 +1469,8 @@ events:
       ENV{PATH}:
         - "/home/aurel/.local/bin"
         - "/home/aurel/.local/bin"
+        - "/home/aurel/.local/bin"
+        - "/home/aurel/.local/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
@@ -1453,7 +1495,7 @@ events:
     kind: "find-v1"
     backtrace:
       - "/usr/share/cmake/Modules/FindOpenGL.cmake:297 (find_path)"
-      - "CMakeLists.txt:30 (find_package)"
+      - "CMakeLists.txt:34 (find_package)"
     mode: "path"
     variable: "OPENGL_GLES2_INCLUDE_DIR"
     description: "Path to a file."
@@ -1506,6 +1548,8 @@ events:
       ENV{PATH}:
         - "/home/aurel/.local/bin"
         - "/home/aurel/.local/bin"
+        - "/home/aurel/.local/bin"
+        - "/home/aurel/.local/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
@@ -1530,7 +1574,7 @@ events:
     kind: "find-v1"
     backtrace:
       - "/usr/share/cmake/Modules/FindOpenGL.cmake:298 (find_path)"
-      - "CMakeLists.txt:30 (find_package)"
+      - "CMakeLists.txt:34 (find_package)"
     mode: "path"
     variable: "OPENGL_GLES3_INCLUDE_DIR"
     description: "Path to a file."
@@ -1583,6 +1627,8 @@ events:
       ENV{PATH}:
         - "/home/aurel/.local/bin"
         - "/home/aurel/.local/bin"
+        - "/home/aurel/.local/bin"
+        - "/home/aurel/.local/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
@@ -1607,7 +1653,7 @@ events:
     kind: "find-v1"
     backtrace:
       - "/usr/share/cmake/Modules/FindOpenGL.cmake:299 (find_path)"
-      - "CMakeLists.txt:30 (find_package)"
+      - "CMakeLists.txt:34 (find_package)"
     mode: "path"
     variable: "OPENGL_xmesa_INCLUDE_DIR"
     description: "Path to a file."
@@ -1676,6 +1722,8 @@ events:
       ENV{PATH}:
         - "/home/aurel/.local/bin"
         - "/home/aurel/.local/bin"
+        - "/home/aurel/.local/bin"
+        - "/home/aurel/.local/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
@@ -1700,7 +1748,7 @@ events:
     kind: "find-v1"
     backtrace:
       - "/usr/share/cmake/Modules/FindOpenGL.cmake:305 (find_path)"
-      - "CMakeLists.txt:30 (find_package)"
+      - "CMakeLists.txt:34 (find_package)"
     mode: "path"
     variable: "OPENGL_GLU_INCLUDE_DIR"
     description: "Path to a file."
@@ -1753,6 +1801,8 @@ events:
       ENV{PATH}:
         - "/home/aurel/.local/bin"
         - "/home/aurel/.local/bin"
+        - "/home/aurel/.local/bin"
+        - "/home/aurel/.local/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
@@ -1777,7 +1827,7 @@ events:
     kind: "find-v1"
     backtrace:
       - "/usr/share/cmake/Modules/FindOpenGL.cmake:319 (find_library)"
-      - "CMakeLists.txt:30 (find_package)"
+      - "CMakeLists.txt:34 (find_package)"
     mode: "library"
     variable: "OPENGL_opengl_LIBRARY"
     description: "Path to a library."
@@ -1830,6 +1880,8 @@ events:
       ENV{PATH}:
         - "/home/aurel/.local/bin"
         - "/home/aurel/.local/bin"
+        - "/home/aurel/.local/bin"
+        - "/home/aurel/.local/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
@@ -1854,7 +1906,7 @@ events:
     kind: "find-v1"
     backtrace:
       - "/usr/share/cmake/Modules/FindOpenGL.cmake:324 (find_library)"
-      - "CMakeLists.txt:30 (find_package)"
+      - "CMakeLists.txt:34 (find_package)"
     mode: "library"
     variable: "OPENGL_glx_LIBRARY"
     description: "Path to a library."
@@ -1940,6 +1992,8 @@ events:
       ENV{PATH}:
         - "/home/aurel/.local/bin"
         - "/home/aurel/.local/bin"
+        - "/home/aurel/.local/bin"
+        - "/home/aurel/.local/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
@@ -1964,7 +2018,7 @@ events:
     kind: "find-v1"
     backtrace:
       - "/usr/share/cmake/Modules/FindOpenGL.cmake:330 (find_library)"
-      - "CMakeLists.txt:30 (find_package)"
+      - "CMakeLists.txt:34 (find_package)"
     mode: "library"
     variable: "OPENGL_egl_LIBRARY"
     description: "Path to a library."
@@ -2050,6 +2104,8 @@ events:
       ENV{PATH}:
         - "/home/aurel/.local/bin"
         - "/home/aurel/.local/bin"
+        - "/home/aurel/.local/bin"
+        - "/home/aurel/.local/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
@@ -2074,7 +2130,7 @@ events:
     kind: "find-v1"
     backtrace:
       - "/usr/share/cmake/Modules/FindOpenGL.cmake:336 (find_library)"
-      - "CMakeLists.txt:30 (find_package)"
+      - "CMakeLists.txt:34 (find_package)"
     mode: "library"
     variable: "OPENGL_gles2_LIBRARY"
     description: "Path to a library."
@@ -2127,6 +2183,8 @@ events:
       ENV{PATH}:
         - "/home/aurel/.local/bin"
         - "/home/aurel/.local/bin"
+        - "/home/aurel/.local/bin"
+        - "/home/aurel/.local/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
@@ -2151,7 +2209,7 @@ events:
     kind: "find-v1"
     backtrace:
       - "/usr/share/cmake/Modules/FindOpenGL.cmake:341 (find_library)"
-      - "CMakeLists.txt:30 (find_package)"
+      - "CMakeLists.txt:34 (find_package)"
     mode: "library"
     variable: "OPENGL_gles3_LIBRARY"
     description: "Path to a library."
@@ -2226,6 +2284,8 @@ events:
       ENV{PATH}:
         - "/home/aurel/.local/bin"
         - "/home/aurel/.local/bin"
+        - "/home/aurel/.local/bin"
+        - "/home/aurel/.local/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
@@ -2250,7 +2310,7 @@ events:
     kind: "find-v1"
     backtrace:
       - "/usr/share/cmake/Modules/FindOpenGL.cmake:347 (find_library)"
-      - "CMakeLists.txt:30 (find_package)"
+      - "CMakeLists.txt:34 (find_package)"
     mode: "library"
     variable: "OPENGL_glu_LIBRARY"
     description: "Path to a library."
@@ -2305,6 +2365,1190 @@ events:
     found: "/usr/lib/libGLU.so"
     search_context:
       ENV{PATH}:
+        - "/home/aurel/.local/bin"
+        - "/home/aurel/.local/bin"
+        - "/home/aurel/.local/bin"
+        - "/home/aurel/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/home/aurel/.local/share/flatpak/exports/bin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+...
+
+---
+events:
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompiler.cmake:54 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:64 (_cmake_find_compiler)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_C_COMPILER"
+    description: "C compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "cc"
+      - "gcc"
+      - "cl"
+      - "bcc"
+      - "xlc"
+      - "icx"
+      - "clang"
+    candidate_directories:
+      - "/usr/bin/"
+    found: "/usr/bin/cc"
+    search_context:
+      ENV{PATH}:
+        - "/home/aurel/.local/bin"
+        - "/home/aurel/.local/bin"
+        - "/home/aurel/.local/bin"
+        - "/home/aurel/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/home/aurel/.local/share/flatpak/exports/bin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:462 (find_file)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:500 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCCompilerId.c.in"
+    candidate_directories:
+      - "/usr/share/cmake/Modules/"
+    found: "/usr/share/cmake/Modules/CMakeCCompilerId.c.in"
+    search_context:
+      ENV{PATH}:
+        - "/home/aurel/.local/bin"
+        - "/home/aurel/.local/bin"
+        - "/home/aurel/.local/bin"
+        - "/home/aurel/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/home/aurel/.local/share/flatpak/exports/bin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /usr/bin/cc 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        /home/aurel/Dev/ComputationalPhysics/cosmos/build/CMakeFiles/4.1.2/CompilerIdC/a.out
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Compiler/GNU-FindBinUtils.cmake:18 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:201 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_C_COMPILER_AR"
+    description: "A wrapper around 'ar' adding the appropriate '--plugin' option for the GCC compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "gcc-ar-15.2"
+      - "gcc-ar-15"
+      - "gcc-ar15"
+      - "gcc-ar"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/home/aurel/.local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/home/aurel/.local/share/flatpak/exports/bin/"
+      - "/var/lib/flatpak/exports/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+    searched_directories:
+      - "/usr/bin/gcc-ar-15.2"
+      - "/home/aurel/.local/bin/gcc-ar-15.2"
+      - "/usr/local/sbin/gcc-ar-15.2"
+      - "/usr/local/bin/gcc-ar-15.2"
+      - "/home/aurel/.local/share/flatpak/exports/bin/gcc-ar-15.2"
+      - "/var/lib/flatpak/exports/bin/gcc-ar-15.2"
+      - "/usr/bin/site_perl/gcc-ar-15.2"
+      - "/usr/bin/vendor_perl/gcc-ar-15.2"
+      - "/usr/bin/core_perl/gcc-ar-15.2"
+      - "/usr/bin/gcc-ar-15"
+      - "/home/aurel/.local/bin/gcc-ar-15"
+      - "/usr/local/sbin/gcc-ar-15"
+      - "/usr/local/bin/gcc-ar-15"
+      - "/home/aurel/.local/share/flatpak/exports/bin/gcc-ar-15"
+      - "/var/lib/flatpak/exports/bin/gcc-ar-15"
+      - "/usr/bin/site_perl/gcc-ar-15"
+      - "/usr/bin/vendor_perl/gcc-ar-15"
+      - "/usr/bin/core_perl/gcc-ar-15"
+      - "/usr/bin/gcc-ar15"
+      - "/home/aurel/.local/bin/gcc-ar15"
+      - "/usr/local/sbin/gcc-ar15"
+      - "/usr/local/bin/gcc-ar15"
+      - "/home/aurel/.local/share/flatpak/exports/bin/gcc-ar15"
+      - "/var/lib/flatpak/exports/bin/gcc-ar15"
+      - "/usr/bin/site_perl/gcc-ar15"
+      - "/usr/bin/vendor_perl/gcc-ar15"
+      - "/usr/bin/core_perl/gcc-ar15"
+    found: "/usr/bin/gcc-ar"
+    search_context:
+      ENV{PATH}:
+        - "/home/aurel/.local/bin"
+        - "/home/aurel/.local/bin"
+        - "/home/aurel/.local/bin"
+        - "/home/aurel/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/home/aurel/.local/share/flatpak/exports/bin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Compiler/GNU-FindBinUtils.cmake:30 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:201 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_C_COMPILER_RANLIB"
+    description: "A wrapper around 'ranlib' adding the appropriate '--plugin' option for the GCC compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "gcc-ranlib-15.2"
+      - "gcc-ranlib-15"
+      - "gcc-ranlib15"
+      - "gcc-ranlib"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/home/aurel/.local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/home/aurel/.local/share/flatpak/exports/bin/"
+      - "/var/lib/flatpak/exports/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+    searched_directories:
+      - "/usr/bin/gcc-ranlib-15.2"
+      - "/home/aurel/.local/bin/gcc-ranlib-15.2"
+      - "/usr/local/sbin/gcc-ranlib-15.2"
+      - "/usr/local/bin/gcc-ranlib-15.2"
+      - "/home/aurel/.local/share/flatpak/exports/bin/gcc-ranlib-15.2"
+      - "/var/lib/flatpak/exports/bin/gcc-ranlib-15.2"
+      - "/usr/bin/site_perl/gcc-ranlib-15.2"
+      - "/usr/bin/vendor_perl/gcc-ranlib-15.2"
+      - "/usr/bin/core_perl/gcc-ranlib-15.2"
+      - "/usr/bin/gcc-ranlib-15"
+      - "/home/aurel/.local/bin/gcc-ranlib-15"
+      - "/usr/local/sbin/gcc-ranlib-15"
+      - "/usr/local/bin/gcc-ranlib-15"
+      - "/home/aurel/.local/share/flatpak/exports/bin/gcc-ranlib-15"
+      - "/var/lib/flatpak/exports/bin/gcc-ranlib-15"
+      - "/usr/bin/site_perl/gcc-ranlib-15"
+      - "/usr/bin/vendor_perl/gcc-ranlib-15"
+      - "/usr/bin/core_perl/gcc-ranlib-15"
+      - "/usr/bin/gcc-ranlib15"
+      - "/home/aurel/.local/bin/gcc-ranlib15"
+      - "/usr/local/sbin/gcc-ranlib15"
+      - "/usr/local/bin/gcc-ranlib15"
+      - "/home/aurel/.local/share/flatpak/exports/bin/gcc-ranlib15"
+      - "/var/lib/flatpak/exports/bin/gcc-ranlib15"
+      - "/usr/bin/site_perl/gcc-ranlib15"
+      - "/usr/bin/vendor_perl/gcc-ranlib15"
+      - "/usr/bin/core_perl/gcc-ranlib15"
+    found: "/usr/bin/gcc-ranlib"
+    search_context:
+      ENV{PATH}:
+        - "/home/aurel/.local/bin"
+        - "/home/aurel/.local/bin"
+        - "/home/aurel/.local/bin"
+        - "/home/aurel/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/home/aurel/.local/share/flatpak/exports/bin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/home/aurel/Dev/ComputationalPhysics/cosmos/build/CMakeFiles/CMakeScratch/TryCompile-5povHt"
+      binary: "/home/aurel/Dev/ComputationalPhysics/cosmos/build/CMakeFiles/CMakeScratch/TryCompile-5povHt"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/aurel/Dev/ComputationalPhysics/cosmos/build/CMakeFiles/CMakeScratch/TryCompile-5povHt'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_fda9b/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_fda9b.dir/build.make CMakeFiles/cmTC_fda9b.dir/build
+        make[1]: Entering directory '/home/aurel/Dev/ComputationalPhysics/cosmos/build/CMakeFiles/CMakeScratch/TryCompile-5povHt'
+        Building C object CMakeFiles/cmTC_fda9b.dir/CMakeCCompilerABI.c.o
+        /usr/bin/cc   -v -o CMakeFiles/cmTC_fda9b.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        Target: x86_64-pc-linux-gnu
+        Configured with: /build/gcc/src/gcc/configure --enable-languages=ada,c,c++,d,fortran,go,lto,m2,objc,obj-c++,rust,cobol --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://gitlab.archlinux.org/archlinux/packaging/packages/gcc/-/issues --with-build-config=bootstrap-lto --with-linker-hash-style=gnu --with-system-zlib --enable-__cxa_atexit --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-link-serialization=1 --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-libssp --disable-libstdcxx-pch --disable-werror
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 15.2.1 20250813 (GCC) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_fda9b.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_fda9b.dir/'
+         /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/cc1 -quiet -v /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_fda9b.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o /tmp/ccIC1Zfx.s
+        GNU C23 (GCC) version 15.2.1 20250813 (x86_64-pc-linux-gnu)
+        	compiled by GNU C version 15.2.1 20250813, GMP version 6.3.0, MPFR version 4.2.2, MPC version 1.3.1, isl version isl-0.27-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../x86_64-pc-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include
+         /usr/local/include
+         /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include-fixed
+         /usr/include
+        End of search list.
+        Compiler executable checksum: 09af9d42b9185573b6c370dd7aa39e64
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_fda9b.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_fda9b.dir/'
+         as -v --64 -o CMakeFiles/cmTC_fda9b.dir/CMakeCCompilerABI.c.o /tmp/ccIC1Zfx.s
+        GNU assembler version 2.45.0 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.45.0
+        COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_fda9b.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_fda9b.dir/CMakeCCompilerABI.c.'
+        Linking C executable cmTC_fda9b
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fda9b.dir/link.txt --verbose=1
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper
+        Target: x86_64-pc-linux-gnu
+        Configured with: /build/gcc/src/gcc/configure --enable-languages=ada,c,c++,d,fortran,go,lto,m2,objc,obj-c++,rust,cobol --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://gitlab.archlinux.org/archlinux/packaging/packages/gcc/-/issues --with-build-config=bootstrap-lto --with-linker-hash-style=gnu --with-system-zlib --enable-__cxa_atexit --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-link-serialization=1 --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-libssp --disable-libstdcxx-pch --disable-werror
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 15.2.1 20250813 (GCC) 
+        COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_fda9b' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_fda9b.'
+         /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccUlxHLF.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_fda9b /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_fda9b.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o
+        collect2 version 15.2.1 20250813
+        /usr/bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccUlxHLF.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_fda9b /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_fda9b.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o
+        GNU ld (GNU Binutils) 2.45.0
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_fda9b' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_fda9b.'
+        /usr/bin/cc  -v -Wl,-v CMakeFiles/cmTC_fda9b.dir/CMakeCCompilerABI.c.o -o cmTC_fda9b
+        make[1]: Leaving directory '/home/aurel/Dev/ComputationalPhysics/cosmos/build/CMakeFiles/CMakeScratch/TryCompile-5povHt'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:217 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include]
+          add: [/usr/local/include]
+          add: [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include-fixed]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include] ==> [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include-fixed] ==> [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include-fixed]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include;/usr/local/include;/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include-fixed;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:253 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
+        ignore line: [Change Dir: '/home/aurel/Dev/ComputationalPhysics/cosmos/build/CMakeFiles/CMakeScratch/TryCompile-5povHt']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_fda9b/fast]
+        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_fda9b.dir/build.make CMakeFiles/cmTC_fda9b.dir/build]
+        ignore line: [make[1]: Entering directory '/home/aurel/Dev/ComputationalPhysics/cosmos/build/CMakeFiles/CMakeScratch/TryCompile-5povHt']
+        ignore line: [Building C object CMakeFiles/cmTC_fda9b.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_fda9b.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: /build/gcc/src/gcc/configure --enable-languages=ada c c++ d fortran go lto m2 objc obj-c++ rust cobol --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://gitlab.archlinux.org/archlinux/packaging/packages/gcc/-/issues --with-build-config=bootstrap-lto --with-linker-hash-style=gnu --with-system-zlib --enable-__cxa_atexit --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-link-serialization=1 --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-libssp --disable-libstdcxx-pch --disable-werror]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 15.2.1 20250813 (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_fda9b.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_fda9b.dir/']
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/cc1 -quiet -v /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_fda9b.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o /tmp/ccIC1Zfx.s]
+        ignore line: [GNU C23 (GCC) version 15.2.1 20250813 (x86_64-pc-linux-gnu)]
+        ignore line: [	compiled by GNU C version 15.2.1 20250813  GMP version 6.3.0  MPFR version 4.2.2  MPC version 1.3.1  isl version isl-0.27-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../x86_64-pc-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include-fixed]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 09af9d42b9185573b6c370dd7aa39e64]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_fda9b.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_fda9b.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_fda9b.dir/CMakeCCompilerABI.c.o /tmp/ccIC1Zfx.s]
+        ignore line: [GNU assembler version 2.45.0 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.45.0]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_fda9b.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_fda9b.dir/CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_fda9b]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fda9b.dir/link.txt --verbose=1]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: /build/gcc/src/gcc/configure --enable-languages=ada c c++ d fortran go lto m2 objc obj-c++ rust cobol --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://gitlab.archlinux.org/archlinux/packaging/packages/gcc/-/issues --with-build-config=bootstrap-lto --with-linker-hash-style=gnu --with-system-zlib --enable-__cxa_atexit --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-link-serialization=1 --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-libssp --disable-libstdcxx-pch --disable-werror]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 15.2.1 20250813 (GCC) ]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_fda9b' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_fda9b.']
+        link line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccUlxHLF.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_fda9b /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_fda9b.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o]
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccUlxHLF.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_fda9b] ==> ignore
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o]
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o]
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o]
+          arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1]
+          arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib]
+          arg [-L/lib/../lib] ==> dir [/lib/../lib]
+          arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+          arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../..] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../..]
+          arg [-L/lib] ==> dir [/lib]
+          arg [-L/usr/lib] ==> dir [/usr/lib]
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_fda9b.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o]
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o]
+        ignore line: [collect2 version 15.2.1 20250813]
+        ignore line: [/usr/bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccUlxHLF.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_fda9b /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_fda9b.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o]
+        linker tool for 'C': /usr/bin/ld
+        collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o] ==> [/usr/lib/Scrt1.o]
+        collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o] ==> [/usr/lib/crti.o]
+        collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o] ==> [/usr/lib/crtn.o]
+        collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1] ==> [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1]
+        collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib] ==> [/usr/lib]
+        collapse library dir [/lib/../lib] ==> [/lib]
+        collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+        collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../..] ==> [/usr/lib]
+        collapse library dir [/lib] ==> [/lib]
+        collapse library dir [/usr/lib] ==> [/usr/lib]
+        implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+        implicit objs: [/usr/lib/Scrt1.o;/usr/lib/crti.o;/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o;/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o;/usr/lib/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1;/usr/lib;/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake:36 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:299 (cmake_determine_linker_id)"
+      - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Running the C compiler's linker: "/usr/bin/ld" "-v"
+      GNU ld (GNU Binutils) 2.45.0
+...
+
+---
+events:
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/FindFreetype.cmake:106 (find_path)"
+      - "CMakeLists.txt:26 (find_package)"
+    mode: "path"
+    variable: "FREETYPE_INCLUDE_DIR_ft2build"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "ft2build.h"
+    candidate_directories:
+      - "/home/aurel/.local/bin/include/freetype2/"
+      - "/home/aurel/.local/bin/include/"
+      - "/home/aurel/.local/bin/freetype2/"
+      - "/home/aurel/.local/bin/"
+      - "/usr/local/sbin/include/freetype2/"
+      - "/usr/local/sbin/include/"
+      - "/usr/local/sbin/freetype2/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/include/freetype2/"
+      - "/usr/local/bin/include/"
+      - "/usr/local/bin/freetype2/"
+      - "/usr/local/bin/"
+      - "/usr/bin/include/freetype2/"
+      - "/usr/bin/include/"
+      - "/usr/bin/freetype2/"
+      - "/usr/bin/"
+      - "/home/aurel/.local/share/flatpak/exports/bin/include/freetype2/"
+      - "/home/aurel/.local/share/flatpak/exports/bin/include/"
+      - "/home/aurel/.local/share/flatpak/exports/bin/freetype2/"
+      - "/home/aurel/.local/share/flatpak/exports/bin/"
+      - "/var/lib/flatpak/exports/bin/include/freetype2/"
+      - "/var/lib/flatpak/exports/bin/include/"
+      - "/var/lib/flatpak/exports/bin/freetype2/"
+      - "/var/lib/flatpak/exports/bin/"
+      - "/usr/bin/site_perl/include/freetype2/"
+      - "/usr/bin/site_perl/include/"
+      - "/usr/bin/site_perl/freetype2/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/include/freetype2/"
+      - "/usr/bin/vendor_perl/include/"
+      - "/usr/bin/vendor_perl/freetype2/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/include/freetype2/"
+      - "/usr/bin/core_perl/include/"
+      - "/usr/bin/core_perl/freetype2/"
+      - "/usr/bin/core_perl/"
+      - "/usr/local/include/include/freetype2/"
+      - "/usr/local/include/include/"
+      - "/usr/local/include/freetype2/"
+      - "/usr/local/include/"
+      - "/usr/local/include/freetype2/"
+      - "/usr/local/include/"
+      - "/usr/local/freetype2/"
+      - "/usr/local/"
+      - "/usr/include/include/freetype2/"
+      - "/usr/include/include/"
+      - "/usr/include/freetype2/"
+      - "/usr/include/"
+      - "/usr/include/freetype2/"
+      - "/usr/include/"
+      - "/usr/freetype2/"
+      - "/usr/"
+      - "/include/include/freetype2/"
+      - "/include/include/"
+      - "/include/freetype2/"
+      - "/include/"
+      - "/usr/X11R6/include/include/freetype2/"
+      - "/usr/X11R6/include/include/"
+      - "/usr/X11R6/include/freetype2/"
+      - "/usr/X11R6/include/"
+      - "/usr/X11R6/include/freetype2/"
+      - "/usr/X11R6/include/"
+      - "/usr/X11R6/freetype2/"
+      - "/usr/X11R6/"
+      - "/usr/pkg/include/include/freetype2/"
+      - "/usr/pkg/include/include/"
+      - "/usr/pkg/include/freetype2/"
+      - "/usr/pkg/include/"
+      - "/usr/pkg/include/freetype2/"
+      - "/usr/pkg/include/"
+      - "/usr/pkg/freetype2/"
+      - "/usr/pkg/"
+      - "/opt/include/include/freetype2/"
+      - "/opt/include/include/"
+      - "/opt/include/freetype2/"
+      - "/opt/include/"
+      - "/opt/include/freetype2/"
+      - "/opt/include/"
+      - "/opt/freetype2/"
+      - "/opt/"
+      - "/usr/include/X11/include/freetype2/"
+      - "/usr/include/X11/include/"
+      - "/usr/include/X11/freetype2/"
+      - "/usr/include/X11/"
+    searched_directories:
+      - "/home/aurel/.local/bin/include/freetype2/ft2build.h"
+      - "/home/aurel/.local/bin/include/ft2build.h"
+      - "/home/aurel/.local/bin/freetype2/ft2build.h"
+      - "/home/aurel/.local/bin/ft2build.h"
+      - "/usr/local/sbin/include/freetype2/ft2build.h"
+      - "/usr/local/sbin/include/ft2build.h"
+      - "/usr/local/sbin/freetype2/ft2build.h"
+      - "/usr/local/sbin/ft2build.h"
+      - "/usr/local/bin/include/freetype2/ft2build.h"
+      - "/usr/local/bin/include/ft2build.h"
+      - "/usr/local/bin/freetype2/ft2build.h"
+      - "/usr/local/bin/ft2build.h"
+      - "/usr/bin/include/freetype2/ft2build.h"
+      - "/usr/bin/include/ft2build.h"
+      - "/usr/bin/freetype2/ft2build.h"
+      - "/usr/bin/ft2build.h"
+      - "/home/aurel/.local/share/flatpak/exports/bin/include/freetype2/ft2build.h"
+      - "/home/aurel/.local/share/flatpak/exports/bin/include/ft2build.h"
+      - "/home/aurel/.local/share/flatpak/exports/bin/freetype2/ft2build.h"
+      - "/home/aurel/.local/share/flatpak/exports/bin/ft2build.h"
+      - "/var/lib/flatpak/exports/bin/include/freetype2/ft2build.h"
+      - "/var/lib/flatpak/exports/bin/include/ft2build.h"
+      - "/var/lib/flatpak/exports/bin/freetype2/ft2build.h"
+      - "/var/lib/flatpak/exports/bin/ft2build.h"
+      - "/usr/bin/site_perl/include/freetype2/ft2build.h"
+      - "/usr/bin/site_perl/include/ft2build.h"
+      - "/usr/bin/site_perl/freetype2/ft2build.h"
+      - "/usr/bin/site_perl/ft2build.h"
+      - "/usr/bin/vendor_perl/include/freetype2/ft2build.h"
+      - "/usr/bin/vendor_perl/include/ft2build.h"
+      - "/usr/bin/vendor_perl/freetype2/ft2build.h"
+      - "/usr/bin/vendor_perl/ft2build.h"
+      - "/usr/bin/core_perl/include/freetype2/ft2build.h"
+      - "/usr/bin/core_perl/include/ft2build.h"
+      - "/usr/bin/core_perl/freetype2/ft2build.h"
+      - "/usr/bin/core_perl/ft2build.h"
+      - "/usr/local/include/include/freetype2/ft2build.h"
+      - "/usr/local/include/include/ft2build.h"
+      - "/usr/local/include/freetype2/ft2build.h"
+      - "/usr/local/include/ft2build.h"
+      - "/usr/local/include/freetype2/ft2build.h"
+      - "/usr/local/include/ft2build.h"
+      - "/usr/local/freetype2/ft2build.h"
+      - "/usr/local/ft2build.h"
+      - "/usr/include/include/freetype2/ft2build.h"
+      - "/usr/include/include/ft2build.h"
+    found: "/usr/include/freetype2/"
+    search_context:
+      ENV{PATH}:
+        - "/home/aurel/.local/bin"
+        - "/home/aurel/.local/bin"
+        - "/home/aurel/.local/bin"
+        - "/home/aurel/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/home/aurel/.local/share/flatpak/exports/bin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_INCLUDE_PATH:
+        - "/usr/include/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/FindFreetype.cmake:116 (find_path)"
+      - "CMakeLists.txt:26 (find_package)"
+    mode: "path"
+    variable: "FREETYPE_INCLUDE_DIR_freetype2"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "freetype/config/ftheader.h"
+      - "config/ftheader.h"
+    candidate_directories:
+      - "/home/aurel/.local/bin/include/freetype2/"
+      - "/home/aurel/.local/bin/include/"
+      - "/home/aurel/.local/bin/freetype2/"
+      - "/home/aurel/.local/bin/"
+      - "/usr/local/sbin/include/freetype2/"
+      - "/usr/local/sbin/include/"
+      - "/usr/local/sbin/freetype2/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/include/freetype2/"
+      - "/usr/local/bin/include/"
+      - "/usr/local/bin/freetype2/"
+      - "/usr/local/bin/"
+      - "/usr/bin/include/freetype2/"
+      - "/usr/bin/include/"
+      - "/usr/bin/freetype2/"
+      - "/usr/bin/"
+      - "/home/aurel/.local/share/flatpak/exports/bin/include/freetype2/"
+      - "/home/aurel/.local/share/flatpak/exports/bin/include/"
+      - "/home/aurel/.local/share/flatpak/exports/bin/freetype2/"
+      - "/home/aurel/.local/share/flatpak/exports/bin/"
+      - "/var/lib/flatpak/exports/bin/include/freetype2/"
+      - "/var/lib/flatpak/exports/bin/include/"
+      - "/var/lib/flatpak/exports/bin/freetype2/"
+      - "/var/lib/flatpak/exports/bin/"
+      - "/usr/bin/site_perl/include/freetype2/"
+      - "/usr/bin/site_perl/include/"
+      - "/usr/bin/site_perl/freetype2/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/include/freetype2/"
+      - "/usr/bin/vendor_perl/include/"
+      - "/usr/bin/vendor_perl/freetype2/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/include/freetype2/"
+      - "/usr/bin/core_perl/include/"
+      - "/usr/bin/core_perl/freetype2/"
+      - "/usr/bin/core_perl/"
+      - "/usr/local/include/include/freetype2/"
+      - "/usr/local/include/include/"
+      - "/usr/local/include/freetype2/"
+      - "/usr/local/include/"
+      - "/usr/local/include/freetype2/"
+      - "/usr/local/include/"
+      - "/usr/local/freetype2/"
+      - "/usr/local/"
+      - "/usr/include/include/freetype2/"
+      - "/usr/include/include/"
+      - "/usr/include/freetype2/"
+      - "/usr/include/"
+      - "/usr/include/freetype2/"
+      - "/usr/include/"
+      - "/usr/freetype2/"
+      - "/usr/"
+      - "/include/include/freetype2/"
+      - "/include/include/"
+      - "/include/freetype2/"
+      - "/include/"
+      - "/usr/X11R6/include/include/freetype2/"
+      - "/usr/X11R6/include/include/"
+      - "/usr/X11R6/include/freetype2/"
+      - "/usr/X11R6/include/"
+      - "/usr/X11R6/include/freetype2/"
+      - "/usr/X11R6/include/"
+      - "/usr/X11R6/freetype2/"
+      - "/usr/X11R6/"
+      - "/usr/pkg/include/include/freetype2/"
+      - "/usr/pkg/include/include/"
+      - "/usr/pkg/include/freetype2/"
+      - "/usr/pkg/include/"
+      - "/usr/pkg/include/freetype2/"
+      - "/usr/pkg/include/"
+      - "/usr/pkg/freetype2/"
+      - "/usr/pkg/"
+      - "/opt/include/include/freetype2/"
+      - "/opt/include/include/"
+      - "/opt/include/freetype2/"
+      - "/opt/include/"
+      - "/opt/include/freetype2/"
+      - "/opt/include/"
+      - "/opt/freetype2/"
+      - "/opt/"
+      - "/usr/include/X11/include/freetype2/"
+      - "/usr/include/X11/include/"
+      - "/usr/include/X11/freetype2/"
+      - "/usr/include/X11/"
+    searched_directories:
+      - "/home/aurel/.local/bin/include/freetype2/freetype/config/ftheader.h"
+      - "/home/aurel/.local/bin/include/freetype/config/ftheader.h"
+      - "/home/aurel/.local/bin/freetype2/freetype/config/ftheader.h"
+      - "/home/aurel/.local/bin/freetype/config/ftheader.h"
+      - "/usr/local/sbin/include/freetype2/freetype/config/ftheader.h"
+      - "/usr/local/sbin/include/freetype/config/ftheader.h"
+      - "/usr/local/sbin/freetype2/freetype/config/ftheader.h"
+      - "/usr/local/sbin/freetype/config/ftheader.h"
+      - "/usr/local/bin/include/freetype2/freetype/config/ftheader.h"
+      - "/usr/local/bin/include/freetype/config/ftheader.h"
+      - "/usr/local/bin/freetype2/freetype/config/ftheader.h"
+      - "/usr/local/bin/freetype/config/ftheader.h"
+      - "/usr/bin/include/freetype2/freetype/config/ftheader.h"
+      - "/usr/bin/include/freetype/config/ftheader.h"
+      - "/usr/bin/freetype2/freetype/config/ftheader.h"
+      - "/usr/bin/freetype/config/ftheader.h"
+      - "/home/aurel/.local/share/flatpak/exports/bin/include/freetype2/freetype/config/ftheader.h"
+      - "/home/aurel/.local/share/flatpak/exports/bin/include/freetype/config/ftheader.h"
+      - "/home/aurel/.local/share/flatpak/exports/bin/freetype2/freetype/config/ftheader.h"
+      - "/home/aurel/.local/share/flatpak/exports/bin/freetype/config/ftheader.h"
+      - "/var/lib/flatpak/exports/bin/include/freetype2/freetype/config/ftheader.h"
+      - "/var/lib/flatpak/exports/bin/include/freetype/config/ftheader.h"
+      - "/var/lib/flatpak/exports/bin/freetype2/freetype/config/ftheader.h"
+      - "/var/lib/flatpak/exports/bin/freetype/config/ftheader.h"
+      - "/usr/bin/site_perl/include/freetype2/freetype/config/ftheader.h"
+      - "/usr/bin/site_perl/include/freetype/config/ftheader.h"
+      - "/usr/bin/site_perl/freetype2/freetype/config/ftheader.h"
+      - "/usr/bin/site_perl/freetype/config/ftheader.h"
+      - "/usr/bin/vendor_perl/include/freetype2/freetype/config/ftheader.h"
+      - "/usr/bin/vendor_perl/include/freetype/config/ftheader.h"
+      - "/usr/bin/vendor_perl/freetype2/freetype/config/ftheader.h"
+      - "/usr/bin/vendor_perl/freetype/config/ftheader.h"
+      - "/usr/bin/core_perl/include/freetype2/freetype/config/ftheader.h"
+      - "/usr/bin/core_perl/include/freetype/config/ftheader.h"
+      - "/usr/bin/core_perl/freetype2/freetype/config/ftheader.h"
+      - "/usr/bin/core_perl/freetype/config/ftheader.h"
+      - "/usr/local/include/include/freetype2/freetype/config/ftheader.h"
+      - "/usr/local/include/include/freetype/config/ftheader.h"
+      - "/usr/local/include/freetype2/freetype/config/ftheader.h"
+      - "/usr/local/include/freetype/config/ftheader.h"
+      - "/usr/local/include/freetype2/freetype/config/ftheader.h"
+      - "/usr/local/include/freetype/config/ftheader.h"
+      - "/usr/local/freetype2/freetype/config/ftheader.h"
+      - "/usr/local/freetype/config/ftheader.h"
+      - "/usr/include/include/freetype2/freetype/config/ftheader.h"
+      - "/usr/include/include/freetype/config/ftheader.h"
+    found: "/usr/include/freetype2/"
+    search_context:
+      ENV{PATH}:
+        - "/home/aurel/.local/bin"
+        - "/home/aurel/.local/bin"
+        - "/home/aurel/.local/bin"
+        - "/home/aurel/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/home/aurel/.local/share/flatpak/exports/bin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_INCLUDE_PATH:
+        - "/usr/include/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/FindFreetype.cmake:129 (find_library)"
+      - "CMakeLists.txt:26 (find_package)"
+    mode: "library"
+    variable: "FREETYPE_LIBRARY_RELEASE"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "freetype"
+      - "libfreetype"
+      - "freetype219"
+    candidate_directories:
+      - "/home/aurel/.local/bin/lib/"
+      - "/home/aurel/.local/bin/"
+      - "/usr/local/sbin/lib/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/lib/"
+      - "/usr/local/bin/"
+      - "/usr/bin/lib/"
+      - "/usr/bin/"
+      - "/home/aurel/.local/share/flatpak/exports/bin/lib/"
+      - "/home/aurel/.local/share/flatpak/exports/bin/"
+      - "/var/lib/flatpak/exports/bin/lib/"
+      - "/var/lib/flatpak/exports/bin/"
+      - "/usr/bin/site_perl/lib/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/lib/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/lib/"
+      - "/usr/bin/core_perl/"
+      - "/usr/local/lib/lib/"
+      - "/usr/local/lib/"
+      - "/usr/local/lib/"
+      - "/usr/local/"
+      - "/usr/lib/lib/"
+      - "/usr/lib/"
+      - "/usr/lib/"
+      - "/usr/"
+      - "/lib/lib/"
+      - "/lib/"
+      - "/usr/X11R6/lib/lib/"
+      - "/usr/X11R6/lib/"
+      - "/usr/X11R6/lib/"
+      - "/usr/X11R6/"
+      - "/usr/pkg/lib/lib/"
+      - "/usr/pkg/lib/"
+      - "/usr/pkg/lib/"
+      - "/usr/pkg/"
+      - "/opt/lib/lib/"
+      - "/opt/lib/"
+      - "/opt/lib/"
+      - "/opt/"
+      - "/usr/lib/X11/lib/"
+      - "/usr/lib/X11/"
+    searched_directories:
+      - "/home/aurel/.local/bin/lib/"
+      - "/home/aurel/.local/bin/"
+      - "/usr/local/sbin/lib/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/lib/"
+      - "/usr/local/bin/"
+      - "/usr/bin/lib/"
+      - "/usr/bin/"
+      - "/home/aurel/.local/share/flatpak/exports/bin/lib/"
+      - "/home/aurel/.local/share/flatpak/exports/bin/"
+      - "/var/lib/flatpak/exports/bin/lib/"
+      - "/var/lib/flatpak/exports/bin/"
+      - "/usr/bin/site_perl/lib/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/lib/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/lib/"
+      - "/usr/bin/core_perl/"
+      - "/usr/local/lib/lib/"
+      - "/usr/local/lib/"
+      - "/usr/local/lib/"
+      - "/usr/local/"
+      - "/usr/lib/lib/"
+    found: "/usr/lib/libfreetype.so"
+    search_context:
+      ENV{PATH}:
+        - "/home/aurel/.local/bin"
+        - "/home/aurel/.local/bin"
+        - "/home/aurel/.local/bin"
+        - "/home/aurel/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/home/aurel/.local/share/flatpak/exports/bin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/FindFreetype.cmake:138 (find_library)"
+      - "CMakeLists.txt:26 (find_package)"
+    mode: "library"
+    variable: "FREETYPE_LIBRARY_DEBUG"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "freetyped"
+      - "libfreetyped"
+      - "freetype219d"
+    candidate_directories:
+      - "/home/aurel/.local/bin/lib/"
+      - "/home/aurel/.local/bin/"
+      - "/usr/local/sbin/lib/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/lib/"
+      - "/usr/local/bin/"
+      - "/usr/bin/lib/"
+      - "/usr/bin/"
+      - "/home/aurel/.local/share/flatpak/exports/bin/lib/"
+      - "/home/aurel/.local/share/flatpak/exports/bin/"
+      - "/var/lib/flatpak/exports/bin/lib/"
+      - "/var/lib/flatpak/exports/bin/"
+      - "/usr/bin/site_perl/lib/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/lib/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/lib/"
+      - "/usr/bin/core_perl/"
+      - "/usr/local/lib/lib/"
+      - "/usr/local/lib/"
+      - "/usr/local/lib/"
+      - "/usr/local/"
+      - "/usr/lib/lib/"
+      - "/usr/lib/"
+      - "/usr/lib/"
+      - "/usr/"
+      - "/lib/lib/"
+      - "/lib/"
+      - "/usr/X11R6/lib/lib/"
+      - "/usr/X11R6/lib/"
+      - "/usr/X11R6/lib/"
+      - "/usr/X11R6/"
+      - "/usr/pkg/lib/lib/"
+      - "/usr/pkg/lib/"
+      - "/usr/pkg/lib/"
+      - "/usr/pkg/"
+      - "/opt/lib/lib/"
+      - "/opt/lib/"
+      - "/opt/lib/"
+      - "/opt/"
+      - "/usr/lib/X11/lib/"
+      - "/usr/lib/X11/"
+    searched_directories:
+      - "/home/aurel/.local/bin/lib/"
+      - "/home/aurel/.local/bin/"
+      - "/usr/local/sbin/lib/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/lib/"
+      - "/usr/local/bin/"
+      - "/usr/bin/lib/"
+      - "/usr/bin/"
+      - "/home/aurel/.local/share/flatpak/exports/bin/lib/"
+      - "/home/aurel/.local/share/flatpak/exports/bin/"
+      - "/var/lib/flatpak/exports/bin/lib/"
+      - "/var/lib/flatpak/exports/bin/"
+      - "/usr/bin/site_perl/lib/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/lib/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/lib/"
+      - "/usr/bin/core_perl/"
+      - "/usr/local/lib/lib/"
+      - "/usr/local/lib/"
+      - "/usr/local/lib/"
+      - "/usr/local/"
+      - "/usr/lib/lib/"
+      - "/usr/lib/"
+      - "/usr/lib/"
+      - "/usr/"
+      - "/lib/lib/"
+      - "/lib/"
+      - "/usr/X11R6/lib/lib/"
+      - "/usr/X11R6/lib/"
+      - "/usr/X11R6/lib/"
+      - "/usr/X11R6/"
+      - "/usr/pkg/lib/lib/"
+      - "/usr/pkg/lib/"
+      - "/usr/pkg/lib/"
+      - "/usr/pkg/"
+      - "/opt/lib/lib/"
+      - "/opt/lib/"
+      - "/opt/lib/"
+      - "/opt/"
+      - "/usr/lib/X11/lib/"
+      - "/usr/lib/X11/"
+      - "/home/aurel/.local/bin/lib/"
+      - "/home/aurel/.local/bin/"
+      - "/usr/local/sbin/lib/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/lib/"
+      - "/usr/local/bin/"
+      - "/usr/bin/lib/"
+      - "/usr/bin/"
+      - "/home/aurel/.local/share/flatpak/exports/bin/lib/"
+      - "/home/aurel/.local/share/flatpak/exports/bin/"
+      - "/var/lib/flatpak/exports/bin/lib/"
+      - "/var/lib/flatpak/exports/bin/"
+      - "/usr/bin/site_perl/lib/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/lib/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/lib/"
+      - "/usr/bin/core_perl/"
+      - "/usr/local/lib/lib/"
+      - "/usr/local/lib/"
+      - "/usr/local/lib/"
+      - "/usr/local/"
+      - "/usr/lib/lib/"
+      - "/usr/lib/"
+      - "/usr/lib/"
+      - "/usr/"
+      - "/lib/lib/"
+      - "/lib/"
+      - "/usr/X11R6/lib/lib/"
+      - "/usr/X11R6/lib/"
+      - "/usr/X11R6/lib/"
+      - "/usr/X11R6/"
+      - "/usr/pkg/lib/lib/"
+      - "/usr/pkg/lib/"
+      - "/usr/pkg/lib/"
+      - "/usr/pkg/"
+      - "/opt/lib/lib/"
+      - "/opt/lib/"
+      - "/opt/lib/"
+      - "/opt/"
+      - "/usr/lib/X11/lib/"
+      - "/usr/lib/X11/"
+      - "/home/aurel/.local/bin/lib/"
+      - "/home/aurel/.local/bin/"
+      - "/usr/local/sbin/lib/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/lib/"
+      - "/usr/local/bin/"
+      - "/usr/bin/lib/"
+      - "/usr/bin/"
+      - "/home/aurel/.local/share/flatpak/exports/bin/lib/"
+      - "/home/aurel/.local/share/flatpak/exports/bin/"
+      - "/var/lib/flatpak/exports/bin/lib/"
+      - "/var/lib/flatpak/exports/bin/"
+      - "/usr/bin/site_perl/lib/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/lib/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/lib/"
+      - "/usr/bin/core_perl/"
+      - "/usr/local/lib/lib/"
+      - "/usr/local/lib/"
+      - "/usr/local/lib/"
+      - "/usr/local/"
+      - "/usr/lib/lib/"
+      - "/usr/lib/"
+      - "/usr/lib/"
+      - "/usr/"
+      - "/lib/lib/"
+      - "/lib/"
+      - "/usr/X11R6/lib/lib/"
+      - "/usr/X11R6/lib/"
+      - "/usr/X11R6/lib/"
+      - "/usr/X11R6/"
+      - "/usr/pkg/lib/lib/"
+      - "/usr/pkg/lib/"
+      - "/usr/pkg/lib/"
+      - "/usr/pkg/"
+      - "/opt/lib/lib/"
+      - "/opt/lib/"
+      - "/opt/lib/"
+      - "/opt/"
+      - "/usr/lib/X11/lib/"
+      - "/usr/lib/X11/"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "/home/aurel/.local/bin"
+        - "/home/aurel/.local/bin"
         - "/home/aurel/.local/bin"
         - "/home/aurel/.local/bin"
         - "/usr/local/sbin"

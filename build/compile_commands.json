@@ -1,0 +1,50 @@
+[
+{
+  "directory": "/home/aurel/Dev/ComputationalPhysics/cosmos/build",
+  "command": "/usr/bin/c++  -isystem /usr/include/freetype2 -g -std=c++17 -Wall -Wextra -o CMakeFiles/cosmos.dir/src/main.cpp.o -c /home/aurel/Dev/ComputationalPhysics/cosmos/src/main.cpp",
+  "file": "/home/aurel/Dev/ComputationalPhysics/cosmos/src/main.cpp",
+  "output": "CMakeFiles/cosmos.dir/src/main.cpp.o"
+},
+{
+  "directory": "/home/aurel/Dev/ComputationalPhysics/cosmos/build",
+  "command": "/usr/bin/cc  -isystem /usr/include/freetype2 -g -Wall -Wextra -o CMakeFiles/cosmos.dir/src/glad.c.o -c /home/aurel/Dev/ComputationalPhysics/cosmos/src/glad.c",
+  "file": "/home/aurel/Dev/ComputationalPhysics/cosmos/src/glad.c",
+  "output": "CMakeFiles/cosmos.dir/src/glad.c.o"
+},
+{
+  "directory": "/home/aurel/Dev/ComputationalPhysics/cosmos/build",
+  "command": "/usr/bin/c++  -isystem /usr/include/freetype2 -g -std=c++17 -Wall -Wextra -o CMakeFiles/cosmos.dir/src/auFontRendering.cpp.o -c /home/aurel/Dev/ComputationalPhysics/cosmos/src/auFontRendering.cpp",
+  "file": "/home/aurel/Dev/ComputationalPhysics/cosmos/src/auFontRendering.cpp",
+  "output": "CMakeFiles/cosmos.dir/src/auFontRendering.cpp.o"
+},
+{
+  "directory": "/home/aurel/Dev/ComputationalPhysics/cosmos/build",
+  "command": "/usr/bin/c++  -isystem /usr/include/freetype2 -g -std=c++17 -Wall -Wextra -o CMakeFiles/cosmos.dir/src/auCharacter.cpp.o -c /home/aurel/Dev/ComputationalPhysics/cosmos/src/auCharacter.cpp",
+  "file": "/home/aurel/Dev/ComputationalPhysics/cosmos/src/auCharacter.cpp",
+  "output": "CMakeFiles/cosmos.dir/src/auCharacter.cpp.o"
+},
+{
+  "directory": "/home/aurel/Dev/ComputationalPhysics/cosmos/build",
+  "command": "/usr/bin/c++  -isystem /usr/include/freetype2 -g -std=c++17 -Wall -Wextra -o CMakeFiles/cosmos.dir/src/Shader.cpp.o -c /home/aurel/Dev/ComputationalPhysics/cosmos/src/Shader.cpp",
+  "file": "/home/aurel/Dev/ComputationalPhysics/cosmos/src/Shader.cpp",
+  "output": "CMakeFiles/cosmos.dir/src/Shader.cpp.o"
+},
+{
+  "directory": "/home/aurel/Dev/ComputationalPhysics/cosmos/build",
+  "command": "/usr/bin/c++  -isystem /usr/include/freetype2 -g -std=c++17 -Wall -Wextra -o CMakeFiles/cosmos.dir/src/VBO.cpp.o -c /home/aurel/Dev/ComputationalPhysics/cosmos/src/VBO.cpp",
+  "file": "/home/aurel/Dev/ComputationalPhysics/cosmos/src/VBO.cpp",
+  "output": "CMakeFiles/cosmos.dir/src/VBO.cpp.o"
+},
+{
+  "directory": "/home/aurel/Dev/ComputationalPhysics/cosmos/build",
+  "command": "/usr/bin/c++  -isystem /usr/include/freetype2 -g -std=c++17 -Wall -Wextra -o CMakeFiles/cosmos.dir/src/VAO.cpp.o -c /home/aurel/Dev/ComputationalPhysics/cosmos/src/VAO.cpp",
+  "file": "/home/aurel/Dev/ComputationalPhysics/cosmos/src/VAO.cpp",
+  "output": "CMakeFiles/cosmos.dir/src/VAO.cpp.o"
+},
+{
+  "directory": "/home/aurel/Dev/ComputationalPhysics/cosmos/build",
+  "command": "/usr/bin/c++  -isystem /usr/include/freetype2 -g -std=c++17 -Wall -Wextra -o CMakeFiles/cosmos.dir/src/EBO.cpp.o -c /home/aurel/Dev/ComputationalPhysics/cosmos/src/EBO.cpp",
+  "file": "/home/aurel/Dev/ComputationalPhysics/cosmos/src/EBO.cpp",
+  "output": "CMakeFiles/cosmos.dir/src/EBO.cpp.o"
+}
+]
