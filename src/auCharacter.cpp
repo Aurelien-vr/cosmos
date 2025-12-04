@@ -26,6 +26,6 @@ void auCharacter::setVerticies(FT_Face face, float space) {
     verticies.push_back(ndc_x);
     verticies.push_back(-ndc_y);
 
-    std::cout << "x: " << ndc_x << " y: " << ndc_y << std::endl;
+    // std::cout << "x: " << ndc_x << " y: " << ndc_y << std::endl;
   }
 }

@@ -10,7 +10,10 @@
 auFontRendering::auFontRendering(auVector2 position, int size, auColor color)
     : position(position), size(size), color(color),
       shaders("../src/ressources/default.vert",
-              "../src//ressources/default.frag") {}
+              "../src//ressources/default.frag") {
+  auInitFreeType();
+  auLoadFace();
+}
 
 auFontRendering::~auFontRendering() { shaders.Delete(); }
 
@@ -31,8 +34,11 @@ int auFontRendering::getGlyph(FT_ULong charcode) {
 }
 
 int auFontRendering::auSetText(std::string text) {
-  auInitFreeType();
-  auLoadFace();
+
+  sentence.clear();
+  glyph.clear();
+  list_contours.clear();
+
   short indicies_vector_total_size = 0;
 
   float space_next_word = 0;
@@ -41,16 +47,16 @@ int auFontRendering::auSetText(std::string text) {
     auCharacter chara;
     getGlyph(letter);
 
-    // std::cout << "Space: " << space_next_word << std::endl;
-    chara.setVerticies(face, 0);
-    std::cout << "--------------------------------------------" << std::endl;
+    chara.setVerticies(face, space_next_word);
     space_next_word += chara.offset_letter;
 
     for (float vertex : chara.verticies)
       sentence.push_back(vertex);
 
-    indicies_vector_total_size += face->glyph->outline.n_points;
-    glyph.push_back(face->glyph->outline.n_points);
+    int actual_points = chara.verticies.size() / 2;
+
+    indicies_vector_total_size += actual_points;
+    glyph.push_back(actual_points);
 
     std::vector<short> contours;
     for (short index = 0; index < face->glyph->outline.n_contours; index++)
@@ -59,12 +65,23 @@ int auFontRendering::auSetText(std::string text) {
     list_contours.push_back(contours);
   }
 
+  if (vao != NULL) {
+    delete vao;
+    vao = nullptr;
+  }
+
+  if (vbo != NULL) {
+    delete vbo;
+    vbo = nullptr;
+  }
+
+  if (ebo != NULL) {
+    delete ebo;
+    ebo = nullptr;
+  }
+
   vao = new VAO();
   vao->Bind();
-
-  // std::cout << "---------------------------------------------" << std::endl;
-  // for (int i = 0; i < sentence.size(); i++)
-  //   std::cout << "Coord: " << sentence[i] << std::endl;
 
   vbo = new VBO(sentence.data(), sentence.size() * sizeof(float));
 
