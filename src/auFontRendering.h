@@ -25,7 +25,12 @@ public:
   VBO *vbo = nullptr;
   EBO *ebo = nullptr;
 
-  std::vector<auCharacter> sentence;
+  // All the verticies of all the glyph to draw
+  std::vector<float> sentence;
+  // List of number of point in the glyph to draw
+  std::vector<short> glyph;
+  // List of list of contours -> [[3,5],[2,4]]
+  std::vector<std::vector<short>> list_contours;
   Shader shaders;
 
   auFontRendering(auVector2 position, int size, auColor color);

@@ -35,8 +35,7 @@ int main() {
   glViewport(0, 0, 800, 600);
 
   auFontRendering font = auFontRendering({0, 0}, 11, {1, 1, 1});
-  font.auSetText("A");
-  std::vector<float> &character = font.sentence[0].verticies;
+  font.auSetText("B");
 
   // for (float num : character) {
   //   std::cout << num << std::endl;

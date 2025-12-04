@@ -1,7 +1,11 @@
 #include "auFontRendering.h"
+#include "Shader.h"
+#include "VBO.h"
 #include "liberation_sans.h"
 #include <freetype/freetype.h>
 #include <freetype/fttypes.h>
+#include <numeric>
+#include <vector>
 
 auFontRendering::auFontRendering(auVector2 position, int size, auColor color)
     : position(position), size(size), color(color),
@@ -29,28 +33,46 @@ int auFontRendering::getGlyph(FT_ULong charcode) {
 int auFontRendering::auSetText(std::string text) {
   auInitFreeType();
   auLoadFace();
-  getGlyph(0);
-  auCharacter chara;
-  chara.setVerticies(face->glyph->outline.points, face->glyph->outline.n_points,
-                     face->units_per_EM);
-  sentence.push_back(chara);
+  short indicies_vector_total_size = 0;
+
+  float space_next_word = 0;
+
+  for (char &letter : text) {
+    auCharacter chara;
+    getGlyph(letter);
+
+    // std::cout << "Space: " << space_next_word << std::endl;
+    chara.setVerticies(face, 0);
+    std::cout << "--------------------------------------------" << std::endl;
+    space_next_word += chara.offset_letter;
+
+    for (float vertex : chara.verticies)
+      sentence.push_back(vertex);
+
+    indicies_vector_total_size += face->glyph->outline.n_points;
+    glyph.push_back(face->glyph->outline.n_points);
+
+    std::vector<short> contours;
+    for (short index = 0; index < face->glyph->outline.n_contours; index++)
+      contours.push_back(face->glyph->outline.contours[index]);
+
+    list_contours.push_back(contours);
+  }
 
   vao = new VAO();
   vao->Bind();
 
-  for (int i = 0; i < chara.verticies.size(); i++) {
-    if (i % 2 == 0) {
-      chara.verticies[i] += 0.2;
-    } else {
-      chara.verticies[i] -= 0.2;
-    }
-  }
+  // std::cout << "---------------------------------------------" << std::endl;
+  // for (int i = 0; i < sentence.size(); i++)
+  //   std::cout << "Coord: " << sentence[i] << std::endl;
 
-  vbo = new VBO(chara.verticies.data(), chara.verticies.size() * sizeof(float));
+  vbo = new VBO(sentence.data(), sentence.size() * sizeof(float));
+
   vao->LinkVBO(*vbo, 0);
+  std::vector<GLuint> indices(indicies_vector_total_size);
+  std::iota(indices.begin(), indices.end(), 0);
 
-  GLuint indices[] = {0, 1, 2, 3, 4, 5, 6, 7};
-  ebo = new EBO(indices, sizeof(indices));
+  ebo = new EBO(indices);
 
   vao->Unbind();
   vbo->Unbind();
@@ -60,8 +82,36 @@ int auFontRendering::auSetText(std::string text) {
 }
 
 int auFontRendering::auDraw() {
-  shaders.Activate();
   vao->Bind();
-  glDrawElements(GL_LINE_LOOP, 8, GL_UNSIGNED_INT, 0);
+
+  long offset = 0;
+
+  for (unsigned long glyhe_index = 0; glyhe_index < glyph.size();
+       glyhe_index++) {
+
+    int nb_points = glyph[glyhe_index]; // Use int
+    unsigned int cpt_nb_contours = 0;
+    int start = 0;
+
+    for (int i = 0; i < nb_points; i++) {
+      if (cpt_nb_contours >= list_contours[glyhe_index].size()) {
+        break;
+      }
+
+      if (i == list_contours[glyhe_index][cpt_nb_contours]) {
+        GLsizei count = i - start + 1;
+
+        unsigned long long byteOffset = (offset + start) * sizeof(GLuint);
+
+        glDrawElements(GL_LINE_LOOP, count, GL_UNSIGNED_INT,
+                       (void *)byteOffset);
+
+        start = i + 1;
+        cpt_nb_contours++;
+      }
+    }
+    offset += nb_points;
+  }
+
   return 0;
 }
