@@ -47,7 +47,7 @@ int auFontRendering::auSetText(std::string text) {
     auCharacter chara;
     getGlyph(letter);
 
-    chara.setVerticies(face, space_next_word);
+    chara.setVerticies(face, size, position, space_next_word);
     space_next_word += chara.offset_letter;
 
     for (float vertex : chara.verticies)

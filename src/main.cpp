@@ -6,7 +6,6 @@
 #include <cstdio>
 #include <glad/glad.h>
 #include <iostream>
-#include <vector>
 
 void framebuffer_size_callback(GLFWwindow *window, int width, int height);
 
@@ -37,7 +36,7 @@ int main() {
 
   glViewport(0, 0, 800, 600);
 
-  auFontRendering font = auFontRendering({0, 0}, 11, {1, 1, 1});
+  auFontRendering font = auFontRendering({-1, 0.94}, 12, {1, 1, 1});
   font.auSetText("1234567dfghj");
 
   glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);

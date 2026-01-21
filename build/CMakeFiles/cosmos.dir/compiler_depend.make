@@ -347,6 +347,7 @@ CMakeFiles/cosmos.dir/src/VBO.cpp.o: /home/aurel/Dev/ComputationalPhysics/cosmos
 
 CMakeFiles/cosmos.dir/src/auCharacter.cpp.o: /home/aurel/Dev/ComputationalPhysics/cosmos/src/auCharacter.cpp \
   /home/aurel/Dev/ComputationalPhysics/cosmos/src/auCharacter.h \
+  /home/aurel/Dev/ComputationalPhysics/cosmos/src/auVector2.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/bitsperlong.h \
   /usr/include/asm-generic/errno-base.h \
@@ -1278,6 +1279,8 @@ CMakeFiles/cosmos.dir/src/EBO.cpp.o:
 
 /home/aurel/Dev/ComputationalPhysics/cosmos/src/auFontRendering.cpp:
 
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/syslimits.h:
+
 /usr/include/bits/types/sigset_t.h:
 
 /usr/include/bits/types/locale_t.h:
@@ -1333,8 +1336,6 @@ CMakeFiles/cosmos.dir/src/EBO.cpp.o:
 /usr/include/c++/15.2.1/bits/functexcept.h:
 
 /usr/include/c++/15.2.1/streambuf:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/syslimits.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdint.h:
 
@@ -1734,10 +1735,6 @@ CMakeFiles/cosmos.dir/src/Shader.cpp.o:
 
 /usr/include/c++/15.2.1/typeinfo:
 
-/home/aurel/Dev/ComputationalPhysics/cosmos/src/auVector2.h:
-
-/usr/include/stdlib.h:
-
 /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/basic_file.h:
 
 /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++io.h:
@@ -1797,6 +1794,10 @@ CMakeFiles/cosmos.dir/src/Shader.cpp.o:
 /home/aurel/Dev/ComputationalPhysics/cosmos/src/auCharacter.h:
 
 /usr/include/limits.h:
+
+/usr/include/stdlib.h:
+
+/home/aurel/Dev/ComputationalPhysics/cosmos/src/auVector2.h:
 
 /usr/include/c++/15.2.1/bits/exception.h:
 

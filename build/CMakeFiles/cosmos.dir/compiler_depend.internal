@@ -352,6 +352,7 @@ CMakeFiles/cosmos.dir/src/VBO.cpp.o
 CMakeFiles/cosmos.dir/src/auCharacter.cpp.o
  /home/aurel/Dev/ComputationalPhysics/cosmos/src/auCharacter.cpp
  /home/aurel/Dev/ComputationalPhysics/cosmos/src/auCharacter.h
+ /home/aurel/Dev/ComputationalPhysics/cosmos/src/auVector2.h
  /usr/include/alloca.h
  /usr/include/asm-generic/bitsperlong.h
  /usr/include/asm-generic/errno-base.h
