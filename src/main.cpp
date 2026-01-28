@@ -1,3 +1,4 @@
+#include <queue>
 #include <string>
 #define GLFW_INCLUDE_NONE
 #include "Shader.h"
@@ -37,32 +38,36 @@ int main() {
   glViewport(0, 0, 800, 600);
 
   auFontRendering font = auFontRendering({-1, 0.94}, 12, {1, 1, 1});
-  font.auSetText("1234567dfghj");
 
   glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
 
-  double lastTime = glfwGetTime();
-  int fps = 0;
+  double elapseTime = 1;
+  std::queue<double> currentTimeStamp;
+  float fps = 0;
+
+  font.auSetText("A");
+  font.auDraw();
 
   // glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
   while (!glfwWindowShouldClose(window)) {
 
     // fps conter
     double currentTime = glfwGetTime();
-    fps++;
-    if (currentTime - lastTime >= 1.f) {
-      std::cout << "FPS: " << fps << std ::endl;
-      font.auSetText(std::to_string(fps));
-      fps = 0;
-      lastTime = currentTime;
+    currentTimeStamp.push(currentTime);
+
+    while (currentTimeStamp.front() + elapseTime < currentTime) {
+      currentTimeStamp.pop();
     }
+    fps = currentTimeStamp.size() / elapseTime;
+
+    // font.auSetText(std::to_string(int(fps)));
 
     glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
     glClear(GL_COLOR_BUFFER_BIT);
 
     font.shaders.Activate();
 
-    font.auDraw();
+    // font.auDraw();
 
     glfwSwapBuffers(window);
     glfwPollEvents();

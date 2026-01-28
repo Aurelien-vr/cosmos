@@ -27,9 +27,13 @@ public:
 
   // All the verticies of all the glyph to draw
   std::vector<float> sentence;
-  // List of number of point in the glyph to draw
-  std::vector<short> glyph;
-  // List of list of contours -> [[3,5],[2,4]]
+
+  // Stores the number of points for each character
+  // Example: [15, 28] means first char has 15 points, second has 28 points
+  std::vector<short> nb_points_character;
+
+  // Is a list of the list of the end position of the glyph contours
+  // Example: [[3,10],[5,7]]. The first glyph first contour en at the index 3
   std::vector<std::vector<short>> list_contours;
   Shader shaders;
 
