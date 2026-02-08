@@ -5,7 +5,7 @@
 #include "auFontRendering.h"
 #include <GLFW/glfw3.h>
 #include <cstdio>
-#include <glad/glad.h>
+#include "../lib/glad.h"
 #include <iostream>
 
 void framebuffer_size_callback(GLFWwindow *window, int width, int height);
@@ -60,14 +60,14 @@ int main() {
     }
     fps = currentTimeStamp.size() / elapseTime;
 
-    // font.auSetText(std::to_string(int(fps)));
+    font.auSetText(std::to_string(int(fps)));
 
     glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
     glClear(GL_COLOR_BUFFER_BIT);
 
     font.shaders.Activate();
 
-    // font.auDraw();
+    font.auDraw();
 
     glfwSwapBuffers(window);
     glfwPollEvents();

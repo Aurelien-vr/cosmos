@@ -1,7 +1,0 @@
-{
-	"InstallScripts" : 
-	[
-		"/home/aurel/Dev/ComputationalPhysics/cosmos/build/cmake_install.cmake"
-	],
-	"Parallel" : false
-}
