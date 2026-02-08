@@ -1,11 +1,11 @@
 #include <queue>
 #include <string>
 #define GLFW_INCLUDE_NONE
+#include "../lib/GLFW/glfw3.h"
+#include "../lib/glad.h"
 #include "Shader.h"
 #include "auFontRendering.h"
-#include <GLFW/glfw3.h>
 #include <cstdio>
-#include "../lib/glad.h"
 #include <iostream>
 
 void framebuffer_size_callback(GLFWwindow *window, int width, int height);

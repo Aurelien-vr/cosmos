@@ -1,9 +1,9 @@
 #include "auFontRendering.h"
+#include "../lib/freetype2/freetype/freetype.h"
+#include "../lib/freetype2/freetype/fttypes.h"
 #include "Shader.h"
 #include "VBO.h"
 #include "liberation_sans.h"
-#include "../lib/freetype2/freetype/freetype.h"
-#include "../lib/freetype2/freetype/fttypes.h"
 #include <numeric>
 #include <vector>
 
@@ -162,7 +162,7 @@ int auFontRendering::auDraw() {
        glyhe_index++) {
 
     int nb_points = nb_points_character[glyhe_index]; // Use int
-    std::cout << nb_points << std::endl;
+    // std::cout << nb_points << std::endl;
     unsigned int cpt_nb_contours = 0;
     int start = 0;
 
