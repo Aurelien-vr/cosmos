@@ -9,7 +9,7 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 #   set(CMAKE_BUILD_TYPE Debug CACHE STRING "Build type" FORCE)
 # endif()
 
-add_compile_options(-Wall -Wextra)
+add_compile_options(-Wall -Wextra -g -O0)
 
 # option(ENABLE_ASAN "Enable AddressSanitizer for Debug builds" ON)
 
