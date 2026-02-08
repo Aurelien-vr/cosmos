@@ -37,7 +37,7 @@ int main() {
 
   glViewport(0, 0, 800, 600);
 
-  auFontRendering font = auFontRendering({-1, 0.94}, 12, {1, 1, 1});
+  auFontRendering font = auFontRendering({0, 0}, 48, {1, 1, 1});
 
   glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
 
@@ -67,6 +67,7 @@ int main() {
 
     font.shaders.Activate();
 
+    font.auDraw();
     // font.auDraw();
 
     glfwSwapBuffers(window);

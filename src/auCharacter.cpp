@@ -5,6 +5,7 @@ void auCharacter::setVerticies(FT_Face face, int size, auVector2 position,
                                float space) {
   FT_Vector *list = face->glyph->outline.points;
   unsigned short nbPoints = face->glyph->outline.n_points;
+  unsigned short nbContours = face->glyph->outline.n_contours;
   FT_UShort EM_size = face->units_per_EM;
 
   for (int i = 0; i < nbPoints; i++) {
@@ -26,7 +27,13 @@ void auCharacter::setVerticies(FT_Face face, int size, auVector2 position,
                      EM_size / 800) *
                     2.0f;
 
-    verticies.push_back(ndc_x);
-    verticies.push_back(-ndc_y);
+    auVector2 point(ndc_x, -ndc_y);
+    verticies.push_back(point);
+  }
+}
+
+void auCharacter::setOutlineEnd(FT_Face face) {
+  for (short index = 0; index < face->glyph->outline.n_contours; index++) {
+    outlineEnd.push_back(face->glyph->outline.contours[index]);
   }
 }

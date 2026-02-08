@@ -26,15 +26,13 @@ public:
   EBO *ebo = nullptr;
 
   // All the verticies of all the glyph to draw
+  // Needed to send all the data at once to the VBO
   std::vector<float> sentence;
 
-  // Stores the number of points for each character
-  // Example: [15, 28] means first char has 15 points, second has 28 points
-  std::vector<short> nb_points_character;
+  // Liste of the characters containing the data for the drawing as a list of
+  // object auCharacters
+  std::vector<auCharacter> listCharacters;
 
-  // Is a list of the list of the end position of the glyph contours
-  // Example: [[3,10],[5,7]]. The first glyph first contour en at the index 3
-  std::vector<std::vector<short>> list_contours;
   Shader shaders;
 
   auFontRendering(auVector2 position, int size, auColor color);

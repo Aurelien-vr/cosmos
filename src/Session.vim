@@ -13,12 +13,12 @@ if &shortmess =~ 'A'
 else
   set shortmess=aoO
 endif
-badd +9 auCharacter.cpp
-badd +74 auFontRendering.cpp
-badd +11 auCharacter.h
-badd +43 main.cpp
-badd +28 auFontRendering.h
-badd +1 VBO.cpp
+badd +131 auFontRendering.cpp
+badd +16 auCharacter.h
+badd +26 auFontRendering.h
+badd +38 ~/Dev/ComputationalPhysics/cosmos/src/main.cpp
+badd +23 auCharacter.cpp
+badd +1 health://
 argglobal
 %argdel
 edit auFontRendering.cpp
@@ -29,6 +29,10 @@ wincmd _ | wincmd |
 vsplit
 1wincmd h
 wincmd w
+wincmd _ | wincmd |
+split
+1wincmd k
+wincmd w
 let &splitbelow = s:save_splitbelow
 let &splitright = s:save_splitright
 wincmd t
@@ -38,10 +42,13 @@ set winminheight=0
 set winheight=1
 set winminwidth=0
 set winwidth=1
-exe 'vert 1resize ' . ((&columns * 88 + 89) / 178)
-exe 'vert 2resize ' . ((&columns * 89 + 89) / 178)
+exe 'vert 1resize ' . ((&columns * 109 + 115) / 231)
+exe '2resize ' . ((&lines * 26 + 27) / 54)
+exe 'vert 2resize ' . ((&columns * 121 + 115) / 231)
+exe '3resize ' . ((&lines * 25 + 27) / 54)
+exe 'vert 3resize ' . ((&columns * 121 + 115) / 231)
 argglobal
-balt auFontRendering.h
+balt auCharacter.h
 setlocal foldmethod=expr
 setlocal foldexpr=v:lua.require'astroui.folding'.foldexpr()
 setlocal foldmarker={{{,}}}
@@ -50,25 +57,19 @@ setlocal foldlevel=99
 setlocal foldminlines=1
 setlocal foldnestmax=20
 setlocal foldenable
-33
-sil! normal! zo
-39
-sil! normal! zo
-95
-sil! normal! zo
-let s:l = 74 - ((3 * winheight(0) + 21) / 43)
+let s:l = 64 - ((24 * winheight(0) + 25) / 51)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 74
-normal! 06|
+keepjumps 64
+normal! 0
 wincmd w
 argglobal
 if bufexists(fnamemodify("auCharacter.cpp", ":p")) | buffer auCharacter.cpp | else | edit auCharacter.cpp | endif
 if &buftype ==# 'terminal'
   silent file auCharacter.cpp
 endif
-balt auFontRendering.cpp
+balt auCharacter.h
 setlocal foldmethod=expr
 setlocal foldexpr=v:lua.require'astroui.folding'.foldexpr()
 setlocal foldmarker={{{,}}}
@@ -77,18 +78,76 @@ setlocal foldlevel=99
 setlocal foldminlines=1
 setlocal foldnestmax=20
 setlocal foldenable
-4
+5
 sil! normal! zo
-let s:l = 9 - ((8 * winheight(0) + 21) / 43)
+5
+sil! normal! zo
+5
+sil! normal! zo
+5
+sil! normal! zo
+5
+sil! normal! zo
+5
+sil! normal! zo
+5
+sil! normal! zo
+5
+sil! normal! zo
+5
+sil! normal! zo
+5
+sil! normal! zo
+5
+sil! normal! zo
+5
+sil! normal! zo
+5
+sil! normal! zo
+5
+sil! normal! zo
+12
+sil! normal! zo
+20
+sil! normal! zo
+20
+sil! normal! zo
+22
+sil! normal! zo
+let s:l = 33 - ((21 * winheight(0) + 12) / 25)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 9
-normal! 034|
+keepjumps 33
+normal! 025|
+wincmd w
+argglobal
+if bufexists(fnamemodify("auFontRendering.cpp", ":p")) | buffer auFontRendering.cpp | else | edit auFontRendering.cpp | endif
+if &buftype ==# 'terminal'
+  silent file auFontRendering.cpp
+endif
+balt ~/Dev/ComputationalPhysics/cosmos/src/main.cpp
+setlocal foldmethod=expr
+setlocal foldexpr=v:lua.require'astroui.folding'.foldexpr()
+setlocal foldmarker={{{,}}}
+setlocal foldignore=#
+setlocal foldlevel=99
+setlocal foldminlines=1
+setlocal foldnestmax=20
+setlocal foldenable
+let s:l = 75 - ((22 * winheight(0) + 12) / 24)
+if s:l < 1 | let s:l = 1 | endif
+keepjumps exe s:l
+normal! zt
+keepjumps 75
+normal! 0
 wincmd w
 2wincmd w
-exe 'vert 1resize ' . ((&columns * 88 + 89) / 178)
-exe 'vert 2resize ' . ((&columns * 89 + 89) / 178)
+exe 'vert 1resize ' . ((&columns * 109 + 115) / 231)
+exe '2resize ' . ((&lines * 26 + 27) / 54)
+exe 'vert 2resize ' . ((&columns * 121 + 115) / 231)
+exe '3resize ' . ((&lines * 25 + 27) / 54)
+exe 'vert 3resize ' . ((&columns * 121 + 115) / 231)
 tabnext 1
 if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0 && getbufvar(s:wipebuf, '&buftype') isnot# 'terminal'
   silent exe 'bwipe ' . s:wipebuf

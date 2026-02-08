@@ -39,8 +39,7 @@ int auFontRendering::auSetText(std::string text) {
 
   // Needed because this function is used mutiple time in the life of the class
   sentence.clear();
-  nb_points_character.clear();
-  list_contours.clear();
+  listCharacters.clear();
 
   short indicies_vector_total_size = 0;
 
@@ -48,74 +47,20 @@ int auFontRendering::auSetText(std::string text) {
 
   for (char &letter : text) {
     auCharacter chara;
-    // NOTE: The function get glyph take the glyp from the file each time the
-    // function is called. Maybe change this for opti
     getGlyph(letter);
 
-    // NOTE: The verticies are store and calculate on setVerticies then store in
-    // an array then store on another array somme work seems to be done 2 times.
-    // Maybe auCharacter is useless
-
-    // Get the points of the different caracter and set them on the right place
-    // Fill the list chara.verticies with the position in space of the different
-    // verticies.
-    // THIS IS FOR ONE LETTER
     chara.setVerticies(face, size, position, space_next_word);
+    chara.setOutlineEnd(face);
 
-    // Set the offsdet for the next occurence of setVerticies
     space_next_word += chara.offset_letter;
 
-    // NOTE: Faster way?
-    for (float vertex : chara.verticies)
-      // Sentence is the data feed to the vbo
-      sentence.push_back(vertex);
-
-    // Because one point is 2 coordinates X and Y
-    int actual_points = chara.verticies.size() / 2;
-
-    indicies_vector_total_size += actual_points;
-
-    nb_points_character.push_back(actual_points);
-
-    std::vector<short> contours;
-
-    // NOTE: Weird to do this in the auFontRendering and do the setVerticies in
-    // auCharacter
-    for (short index = 0; index < face->glyph->outline.n_contours; index++) {
-      contours.push_back(face->glyph->outline.contours[index]);
-
-      // unsigned char *tags = face->glyph->outline.tags;
-      // for (int i = 0; i < face->glyph->outline.n_points; i++) {
-      //   unsigned char tag = tags[i];
-      //   std::cout << "Point: " << i << ":"
-      //             << "(" << face->glyph->outline.points[i].x << ", "
-      //             << face->glyph->outline.points[i].y << ") "
-      //             << "Tag=" << static_cast<int>(tag) << " -> ";
-      //
-      //   if (tag & FT_CURVE_TAG_ON) { // bit 0
-      //     std::cout << "ON";
-      //   } else {
-      //     std::cout << "OFF (";
-      //     if (tag & FT_CURVE_TAG_CUBIC) { // bit 1
-      //       std::cout << "cubic";
-      //     } else {
-      //       std::cout << "quadratic";
-      //       if (tag & FT_CURVE_TAG_CONIC) {
-      //         std::cout << "\n conic";
-      //       }
-      //     }
-      //     std::cout << ")";
-      //   }
-      //
-      //   std::cout << std::endl;
-      // }
+    for (auVector2 point : chara.verticies) {
+      sentence.push_back(point.x);
+      sentence.push_back(point.y);
     }
 
-    list_contours.push_back(contours);
+    listCharacters.push_back(chara);
   }
-
-  // Reste VAO, VBO et EBO
-  // Useful if they where used on the previous frame
 
   if (vao != NULL) {
     delete vao;
@@ -138,9 +83,10 @@ int auFontRendering::auSetText(std::string text) {
   vao->Bind();
 
   vbo = new VBO(sentence.data(), sentence.size() * sizeof(float));
-
   vao->LinkVBO(*vbo, 0);
-  std::vector<GLuint> indices(indicies_vector_total_size);
+
+  int total_vertices = sentence.size() / 2;
+  std::vector<GLuint> indices(total_vertices);
   std::iota(indices.begin(), indices.end(), 0);
 
   ebo = new EBO(indices);
@@ -153,37 +99,12 @@ int auFontRendering::auSetText(std::string text) {
 }
 
 int auFontRendering::auDraw() {
-
   vao->Bind();
+  int offset = 0;
 
-  long offset = 0;
-
-  for (unsigned long glyhe_index = 0; glyhe_index < nb_points_character.size();
-       glyhe_index++) {
-
-    int nb_points = nb_points_character[glyhe_index]; // Use int
-    std::cout << nb_points << std::endl;
-    unsigned int cpt_nb_contours = 0;
-    int start = 0;
-
-    for (int i = 0; i < nb_points; i++) {
-      if (cpt_nb_contours >= list_contours[glyhe_index].size()) {
-        break;
-      }
-
-      if (i == list_contours[glyhe_index][cpt_nb_contours]) {
-        GLsizei count = i - start + 1;
-
-        unsigned long long byteOffset = (offset + start) * sizeof(GLuint);
-
-        glDrawElements(GL_LINE_LOOP, count, GL_UNSIGNED_INT,
-                       (void *)byteOffset);
-
-        start = i + 1;
-        cpt_nb_contours++;
-      }
-    }
-    offset += nb_points;
+  for (const auCharacter &character : listCharacters) {
+    glDrawArrays(GL_POINTS, offset, character.verticies.size());
+    offset += character.verticies.size();
   }
 
   return 0;
