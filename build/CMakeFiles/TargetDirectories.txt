@@ -1,0 +1,3 @@
+/home/mallart/trucs-de-con/aurelien/cosmos/build/CMakeFiles/cosmos.dir
+/home/mallart/trucs-de-con/aurelien/cosmos/build/CMakeFiles/edit_cache.dir
+/home/mallart/trucs-de-con/aurelien/cosmos/build/CMakeFiles/rebuild_cache.dir
