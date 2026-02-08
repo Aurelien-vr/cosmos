@@ -44,3 +44,6 @@
 build/
 
 .cache/
+
+# vim session
+*.vim
