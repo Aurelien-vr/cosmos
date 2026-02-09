@@ -1,12 +1,16 @@
+#include <optional>
 #include <queue>
 #include <string>
 #define GLFW_INCLUDE_NONE
+#include "../lib/GLFW/glfw3.h"
+#include "../lib/glad.h"
 #include "Shader.h"
 #include "auFontRendering.h"
-#include <GLFW/glfw3.h>
 #include <cstdio>
-#include <glad/glad.h>
 #include <iostream>
+#include <chrono>
+#include <thread>
+
 
 void framebuffer_size_callback(GLFWwindow *window, int width, int height);
 
@@ -42,7 +46,7 @@ int main() {
   glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
 
   double elapseTime = 1;
-  std::queue<double> currentTimeStamp;
+  std::optional<double> currentTimeStamp;
   float fps = 0;
 
   font.auSetText("A");
@@ -53,14 +57,13 @@ int main() {
 
     // fps conter
     double currentTime = glfwGetTime();
-    currentTimeStamp.push(currentTime);
-
-    while (currentTimeStamp.front() + elapseTime < currentTime) {
-      currentTimeStamp.pop();
+    if (currentTimeStamp.has_value())
+	{
+		double seconds = currentTime - currentTimeStamp.value();
+		fps = 1 / seconds;
     }
-    fps = currentTimeStamp.size() / elapseTime;
-
-    // font.auSetText(std::to_string(int(fps)));
+	currentTimeStamp = currentTime;
+    font.auSetText(std::to_string(int(fps)));
 
     glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
     glClear(GL_COLOR_BUFFER_BIT);
@@ -70,6 +73,8 @@ int main() {
     font.auDraw();
     // font.auDraw();
 
+	// use this to test fps counter
+	// std::this_thread::sleep_for(std::chrono::milliseconds(200));
     glfwSwapBuffers(window);
     glfwPollEvents();
   }

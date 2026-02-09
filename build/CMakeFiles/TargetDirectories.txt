@@ -1,3 +1,0 @@
-/home/aurel/Dev/ComputationalPhysics/cosmos/build/CMakeFiles/cosmos.dir
-/home/aurel/Dev/ComputationalPhysics/cosmos/build/CMakeFiles/edit_cache.dir
-/home/aurel/Dev/ComputationalPhysics/cosmos/build/CMakeFiles/rebuild_cache.dir

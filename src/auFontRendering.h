@@ -1,7 +1,7 @@
 #pragma once
 #include "Shader.h"
 #include "auCharacter.h"
-#include <freetype/fttypes.h>
+#include "../lib/freetype2/freetype/fttypes.h"
 #include <ft2build.h>
 #include <string>
 #include <vector>

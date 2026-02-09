@@ -1,9 +1,9 @@
 #pragma once
 
 #include "auVector2.h"
-#include <freetype/freetype.h>
-#include <freetype/ftimage.h>
-#include <freetype/fttypes.h>
+#include "../lib/freetype2/freetype/freetype.h"
+#include "../lib/freetype2/freetype/ftimage.h"
+#include "../lib/freetype2/freetype/fttypes.h"
 #include <vector>
 
 class auCharacter {

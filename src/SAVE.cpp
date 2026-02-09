@@ -1,8 +1,8 @@
 #include "auFontRendering.h"
 #include "Shader.h"
 #include "liberation_sans.h"
-#include <freetype/freetype.h>
-#include <freetype/fttypes.h>
+#include "../lib/freetype2/freetype/freetype.h"
+#include "../lib/freetype2/freetype/fttypes.h"
 
 auFontRendering::auFontRendering(auVector2 position, int size, auColor color)
     : position(position), size(size), color(color),

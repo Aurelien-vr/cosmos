@@ -1,9 +1,9 @@
 #include "auFontRendering.h"
+#include "../lib/freetype2/freetype/freetype.h"
+#include "../lib/freetype2/freetype/fttypes.h"
 #include "Shader.h"
 #include "VBO.h"
 #include "liberation_sans.h"
-#include <freetype/freetype.h>
-#include <freetype/fttypes.h>
 #include <numeric>
 #include <vector>
 
