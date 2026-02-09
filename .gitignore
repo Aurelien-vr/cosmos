@@ -47,3 +47,4 @@ build/
 
 # vim session
 *.vim
+*.nvim
