@@ -1,6 +1,8 @@
 #include "Shader.h"
 #include <GLFW/glfw3.h>
+#include <fstream>
 #include <iostream>
+#include <sstream>
 
 std::string readShaderFile(const std::string &filePath) {
   std::ifstream fileStream(filePath);
@@ -82,3 +84,15 @@ Shader::Shader(std::string vertPath, std::string fragPath) {
 void Shader::Activate() { glUseProgram(ID); }
 
 void Shader::Delete() { glDeleteProgram(ID); }
+
+void Shader::SetVec2(const std::string &name, float x, float y) {
+  glUniform2f(glGetUniformLocation(ID, name.c_str()), x, y);
+}
+
+void Shader::SetInt(const std::string &name, int val) {
+  glUniform1i(glGetUniformLocation(ID, name.c_str()), val);
+}
+
+void Shader::SetFloat(const std::string &name, float val) {
+  glUniform1f(glGetUniformLocation(ID, name.c_str()), val);
+}

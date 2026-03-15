@@ -1,21 +1,49 @@
 #include "auFontRendering.h"
 #include "../lib/freetype2/freetype/freetype.h"
 #include "../lib/freetype2/freetype/fttypes.h"
+#include "DIB.h"
+#include "DrawElementsIndirectCommand.h"
 #include "Shader.h"
+#include "VAO.h"
 #include "VBO.h"
+#include "auCharacter.h"
 #include "liberation_sans.h"
+
+#include <GLFW/glfw3.h>
+#include <freetype/ftimage.h>
+#include <iostream>
 #include <numeric>
 #include <vector>
 
-auFontRendering::auFontRendering(auVector2 position, int size, auColor color)
-    : position(position), size(size), color(color),
+auFontRendering::auFontRendering(GLFWwindow *window, auVector2 position,
+                                 int size, auColor color)
+    : position(position), size(size), color(color), window(window),
       shaders("../src/ressources/default.vert",
-              "../src//ressources/default.frag") {
+              "../src/ressources/default.frag") {
+
+  glfwSetWindowUserPointer(window, this);
+  glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
+
   auInitFreeType();
   auLoadFace();
 }
 
-auFontRendering::~auFontRendering() { shaders.Delete(); }
+auFontRendering::~auFontRendering() {
+  shaders.Delete();
+  if (face)
+    FT_Done_Face(face);
+  if (library)
+    FT_Done_FreeType(library);
+
+  delete vao;
+  delete vbo;
+  delete ebo;
+  delete dib;
+  vao = nullptr;
+  vbo = nullptr;
+  ebo = nullptr;
+  dib = nullptr;
+}
 
 int auFontRendering::auInitFreeType() { return !FT_Init_FreeType(&library); }
 
@@ -33,35 +61,86 @@ int auFontRendering::getGlyph(FT_ULong charcode) {
   return FT_Load_Glyph(face, index, FT_LOAD_NO_BITMAP);
 }
 
-// NOTE: Is caleld at each frame -> methode to keep the char in memory if they
-// does not change
-int auFontRendering::auSetText(std::string text) {
+void auFontRendering::loadFont() {
 
-  // Needed because this function is used mutiple time in the life of the class
-  sentence.clear();
-  listCharacters.clear();
+  int offset = 0;
 
-  short indicies_vector_total_size = 0;
+  clearBuffer();
 
-  float space_next_word = 0;
+  glfwGetFramebufferSize(window, &screenWidth, &screenHeight);
 
-  for (char &letter : text) {
-    auCharacter chara;
-    getGlyph(letter);
+  for (unsigned char c = 0; c < 127; c++) {
+    // Set the face in the variable face
+    // It is then pass to the character to retrive the outline points
+    getGlyph(c);
+    auCharacter chara = auCharacter(face, 20);
+    chara.setResolution();
 
-    chara.setVerticies(face, size, position, space_next_word);
-    chara.setOutlineEnd(face);
+    // Use to keep the characters if needed later (Not used for now)
+    listCharacters.push_back(chara);
 
-    space_next_word += chara.offset_letter;
-
-    for (auVector2 point : chara.verticies) {
+    // Put the verticies of the character inside a large list for the VBO
+    for (FT_Vector_ point : chara.verticies) {
       sentence.push_back(point.x);
       sentence.push_back(point.y);
     }
 
-    listCharacters.push_back(chara);
+    cmdBuffer.push_back(
+        {uint32_t(chara.verticies.size()), 1, uint32_t(offset), 0, 0});
+
+    offset += chara.verticies.size();
   }
 
+  vao = new VAO();
+  vao->Bind();
+
+  // Create a VBO and bind it
+  vbo = new VBO(sentence.data(), sentence.size() * sizeof(float));
+
+  vao->LinkVBO(*vbo, 0);
+
+  // Create a EBO with increasing value (0,1,2,3,...)
+  // The EBO is useless but needed in the setup
+  // it is a dummy EBO
+  // In the meantime of a efficent EBO
+  int total_vertices = sentence.size() / 2;
+  std::vector<GLuint> indices(total_vertices);
+  std::iota(indices.begin(), indices.end(), 0);
+
+  ebo = new EBO(indices);
+
+  dib = new DIB(cmdBuffer.data(),
+                cmdBuffer.size() * sizeof(DrawElementsIndirectCommand));
+
+  vao->Unbind();
+  vbo->Unbind();
+  ebo->Unbind();
+  dib->Unbind();
+
+  for (FT_Vector_ point : listCharacters[66].verticies) {
+    std::cout << "List Chara: " << point.x << " | " << point.y << std::endl;
+  }
+
+  std::cout << "Data: " << cmdBuffer[66].count << std::endl;
+}
+
+int auFontRendering::auDraw() {
+  shaders.Activate(); // activate here
+
+  shaders.SetFloat("uPtSize", float(size));
+  shaders.SetInt("uEM_size", face->units_per_EM);
+  shaders.SetVec2("uScreenSize", screenWidth, screenHeight);
+
+  vao->Bind();
+  dib->Bind();
+  glMultiDrawElementsIndirect(
+      GL_LINE_LOOP, GL_UNSIGNED_INT,
+      (void *)(66 * sizeof(DrawElementsIndirectCommand)), 1,
+      sizeof(DrawElementsIndirectCommand));
+  return 0;
+}
+
+void auFontRendering::clearBuffer() {
   if (vao != NULL) {
     delete vao;
     vao = nullptr;
@@ -77,35 +156,17 @@ int auFontRendering::auSetText(std::string text) {
     ebo = nullptr;
   }
 
-  // WARNING: Put the verticies on the GPU, done each frame and not opti
-
-  vao = new VAO();
-  vao->Bind();
-
-  vbo = new VBO(sentence.data(), sentence.size() * sizeof(float));
-  vao->LinkVBO(*vbo, 0);
-
-  int total_vertices = sentence.size() / 2;
-  std::vector<GLuint> indices(total_vertices);
-  std::iota(indices.begin(), indices.end(), 0);
-
-  ebo = new EBO(indices);
-
-  vao->Unbind();
-  vbo->Unbind();
-  ebo->Unbind();
-
-  return 0;
+  if (dib != NULL) {
+    delete dib;
+    dib = nullptr;
+  }
 }
 
-int auFontRendering::auDraw() {
-  vao->Bind();
-  int offset = 0;
-
-  for (const auCharacter &character : listCharacters) {
-    glDrawArrays(GL_POINTS, offset, character.verticies.size());
-    offset += character.verticies.size();
-  }
-
-  return 0;
+void auFontRendering::framebuffer_size_callback(GLFWwindow *window, int width,
+                                                int height) {
+  glViewport(0, 0, width, height);
+  // IA magic need to better understand how it works
+  auto *self = static_cast<auFontRendering *>(glfwGetWindowUserPointer(window));
+  self->shaders.Activate();
+  self->shaders.SetVec2("uScreenSize", width, height);
 }

@@ -15,15 +15,9 @@ add_compile_options(-Wall -Wextra -g)
 
 option(ENABLE_ASAN "Enable AddressSanitizer for Debug builds" ON)
 
-set(PROJECT_SOURCES
-  "${PROJECT_SOURCE_DIR}/src/main.cpp"
-  "${PROJECT_SOURCE_DIR}/src/glad.c"  
-  "${PROJECT_SOURCE_DIR}/src/auFontRendering.cpp"
-  "${PROJECT_SOURCE_DIR}/src/auCharacter.cpp"
-  "${PROJECT_SOURCE_DIR}/src/Shader.cpp"
-  "${PROJECT_SOURCE_DIR}/src/VBO.cpp"
-  "${PROJECT_SOURCE_DIR}/src/VAO.cpp"
-  "${PROJECT_SOURCE_DIR}/src/EBO.cpp"
+file(GLOB PROJECT_SOURCES
+  "${PROJECT_SOURCE_DIR}/src/*.cpp"
+  "${PROJECT_SOURCE_DIR}/src/*.c"
 )
 
 add_executable(cosmos ${PROJECT_SOURCES})
@@ -43,6 +37,13 @@ if(ENABLE_ASAN)
     )
     target_link_options(cosmos PRIVATE
       $<$<CONFIG:Debug>:-fsanitize=address -fno-omit-frame-pointer>
+    )
+    add_custom_target(run
+      COMMAND ${CMAKE_COMMAND} -E env
+        LSAN_OPTIONS=suppressions=${CMAKE_BINARY_DIR}/lsan.supp
+        $<TARGET_FILE:cosmos>
+      DEPENDS cosmos
+      WORKING_DIRECTORY ${CMAKE_BINARY_DIR}
     )
   else()
     message(WARNING "AddressSanitizer flags enabled but compiler is not Clang/GNU.")

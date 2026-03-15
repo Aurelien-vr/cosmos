@@ -1,7 +1,5 @@
 #include "VBO.h"
 
-#include "VBO.h"
-
 VBO::VBO(GLfloat *verticies, GLsizeiptr size) {
   glGenBuffers(1, &ID);
 

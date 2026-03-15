@@ -1,8 +1,5 @@
 #pragma once
-#include <fstream>
 #include "../lib/glad.h"
-#include <iostream>
-#include <sstream>
 #include <string>
 
 std::string readShaderFile(const std::string &filePath);
@@ -14,4 +11,7 @@ public:
   Shader(std::string vertPath, std::string fracPath);
   void Activate();
   void Delete();
+  void SetVec2(const std::string &name, float x, float y);
+  void SetInt(const std::string &name, int val);
+  void SetFloat(const std::string &name, float val);
 };
