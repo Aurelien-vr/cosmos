@@ -117,15 +117,15 @@ void auFontRendering::loadFont() {
   ebo->Unbind();
   dib->Unbind();
 
-  for (FT_Vector_ point : listCharacters[66].verticies) {
-    std::cout << "List Chara: " << point.x << " | " << point.y << std::endl;
-  }
-
-  std::cout << "Data: " << cmdBuffer[66].count << std::endl;
+  // for (FT_Vector_ point : listCharacters[66].verticies) {
+  //   std::cout << "List Chara: " << point.x << " | " << point.y << std::endl;
+  // }
+  //
+  // std::cout << "Data: " << cmdBuffer[66].count << std::endl;
 }
 
-int auFontRendering::auDraw() {
-  shaders.Activate(); // activate here
+int auFontRendering::auDraw(std::string letter) {
+  shaders.Activate();
 
   shaders.SetFloat("uPtSize", float(size));
   shaders.SetInt("uEM_size", face->units_per_EM);
@@ -133,10 +133,12 @@ int auFontRendering::auDraw() {
 
   vao->Bind();
   dib->Bind();
-  glMultiDrawElementsIndirect(
-      GL_LINE_LOOP, GL_UNSIGNED_INT,
-      (void *)(66 * sizeof(DrawElementsIndirectCommand)), 1,
-      sizeof(DrawElementsIndirectCommand));
+  for (char c : letter) {
+    glMultiDrawElementsIndirect(
+        GL_LINE_LOOP, GL_UNSIGNED_INT,
+        (void *)(static_cast<int>(c) * sizeof(DrawElementsIndirectCommand)), 1,
+        sizeof(DrawElementsIndirectCommand));
+  }
   return 0;
 }
 

@@ -26,17 +26,52 @@ void auCharacter::setResolution() {
 
     } else if (outline.tags[i_point] == FT_CURVE_TAG_CONIC) {
 
-      std::vector<FT_Vector_> bezierCurvePoints =
-          bezierPoints(interval, outline.points[i_point - 1],
-                       outline.points[i_point + 1], outline.points[i_point]);
+      // TODO:Two successive conic ‘off’ points force the rasterizer to create
+      // (during the scan-line conversion process exclusively) a virtual ‘on’
+      // point inbetween, at their exact middle. This greatly facilitates the
+      // definition of successive conic Bézier arcs. Moreover, it is the way
+      // outlines are described in the TrueType specification.
 
-      // std::cout << "size list: " << bezierCurvePoints.size() << std::endl;
+      std::vector<FT_Vector_> bezierCurvePoints;
+      // TODO:
+      // If 2 FT_CURVE_TAG_CONIC folowed each other (FreeType doc)
+      // Maybe wrap this in a function backToBackCubic to simplify the set
+      // resolution.
+      if (outline.tags[i_point + 1] == FT_CURVE_TAG_CONIC) {
+        FT_Vector_ virtualPoint = {
+            lerp(outline.points[i_point].x, outline.points[i_point + 1].x, 0.5),
+            lerp(outline.points[i_point].y, outline.points[i_point + 1].y,
+                 0.5)};
+
+        bezierCurvePoints = bezierPoints(interval, outline.points[i_point - 1],
+                                         virtualPoint, outline.points[i_point]);
+
+        // NOTE: need to pass by intermediate vector to add the seconde conic
+        // curve points to the original one very wanky
+        std::vector<FT_Vector_> scdBezierCurvePoints =
+            bezierPoints(interval, virtualPoint, outline.points[i_point + 2],
+                         outline.points[i_point + 1]);
+
+        bezierCurvePoints.insert(bezierCurvePoints.end(),
+                                 scdBezierCurvePoints.begin(),
+                                 scdBezierCurvePoints.end());
+
+        i_point++;
+      } else {
+        bezierCurvePoints =
+            bezierPoints(interval, outline.points[i_point - 1],
+                         outline.points[i_point + 1], outline.points[i_point]);
+      }
 
       verticies.insert(verticies.end(), bezierCurvePoints.begin(),
                        bezierCurvePoints.end());
+
+    } else if (outline.tags[i_point] == FT_CURVE_TAG_CUBIC) {
+      // There is no cubic tag on the default font for the first 126 ascii
+      // character
+      std::cout << "CUBIC" << std::endl;
     }
   }
-  // std::cout << "End of chara" << std::endl;
 }
 
 long auCharacter::lerp(float a, float b, float f) {

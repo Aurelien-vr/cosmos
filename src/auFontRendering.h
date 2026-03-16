@@ -43,7 +43,6 @@ public:
   // object auCharacters
   std::vector<auCharacter> listCharacters;
   std::vector<DrawElementsIndirectCommand> cmdBuffer;
-
   auFontRendering(GLFWwindow *window, auVector2 position, int size,
                   auColor color);
   ~auFontRendering();
@@ -51,7 +50,7 @@ public:
   void loadFont();
   int auSetText(std::string text);
   int setFont(std::string path);
-  int auDraw();
+  int auDraw(std::string letter);
 
 private:
   FT_Library library;
